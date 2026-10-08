@@ -14,6 +14,10 @@ script:
    ads into its own new ad set (a new ad that reuses the original creative, so
    it shows the same post), and pauses the original ad so it doesn't also keep
    running in the source ad set. Nothing is deleted.
+4. Puts every ad that keeps running on a creative with no Instagram account
+   attached: the same Facebook post, so Instagram placements show the
+   Facebook Page's name and picture. This avoids Meta's "Page has no access
+   to Instagram account" error when no Instagram account is connected.
 
 It runs as a dry run by default and prints the plan. Pass --apply to make the
 changes. It is safe to re-run after a partial failure: the source ad set is
@@ -61,6 +65,15 @@ def get(path, **params):
 
 def post(path, **params):
     return call("POST", path, **params)
+
+
+def page_identity_creative(account_id, creative_id):
+    """Return a creative for the same post with no Instagram account attached."""
+    creative = get(creative_id, fields="name,instagram_user_id,effective_object_story_id")
+    if not creative.get("instagram_user_id"):
+        return creative_id
+    return post(f"{account_id}/adcreatives", name=f"{creative['name'][:60]} · FB Page identity",
+                object_story_id=creative["effective_object_story_id"])["id"]
 
 
 def money(minor_units):
@@ -139,6 +152,7 @@ def main():
     print(f"Plan:      '{keep['name']}' stays in the source ad set")
     for ad in move:
         print(f"           '{ad['name']}' -> copied into its own ad set; original paused")
+    print("Identity:  running ads use the Facebook Page on all placements (no Instagram account)")
 
     if not args.apply:
         print("\nDry run - nothing changed. Re-run with --apply to make these changes.")
@@ -162,13 +176,17 @@ def main():
              targeting=json.dumps(targeting), end_time=source["end_time"])
         # 3b. New ad on the original creative. (Copying the ad itself with
         # /{ad_id}/copies fails Meta's Page/Instagram account check.)
-        existing = [a for a in get(f"{new_adset}/ads", fields="id,name", limit=100)["data"]
-                    if a["name"] == label]
+        existing = [a for a in get(f"{new_adset}/ads", fields="id,name,creative",
+                                   limit=100)["data"] if a["name"] == label]
         if existing:
             new_ad = existing[0]["id"]
+            creative_id = page_identity_creative(account_id, existing[0]["creative"]["id"])
+            if creative_id != existing[0]["creative"]["id"]:
+                post(new_ad, creative=json.dumps({"creative_id": creative_id}))
         else:
+            creative_id = page_identity_creative(account_id, ad["creative"]["id"])
             new_ad = post(f"{account_id}/ads", name=label, adset_id=new_adset,
-                          creative=json.dumps({"creative_id": ad["creative"]["id"]}),
+                          creative=json.dumps({"creative_id": creative_id}),
                           status="PAUSED")["id"]
         post(new_ad, status="ACTIVE")
         post(new_adset, status="ACTIVE")
@@ -178,6 +196,9 @@ def main():
 
     # Meta pauses ads itself when they hit a hard error (e.g. a broken
     # Page/Instagram link), so make sure the ad that stays here is on too.
+    creative_id = page_identity_creative(account_id, keep["creative"]["id"])
+    if creative_id != keep["creative"]["id"]:
+        post(keep["id"], creative=json.dumps({"creative_id": creative_id}))
     post(keep["id"], status="ACTIVE")
     post(source["id"], name=f"{base_name} · {keep['name']}")
 
@@ -195,8 +216,10 @@ def main():
               f"ends {adset['end_time']}")
         print(f"    countries {','.join(adset['targeting']['geo_locations'].get('countries', []))}; "
               f"{len(interests)} interests: {', '.join(interests)}")
-        for ad in get(f"{adset['id']}/ads", fields="name,status,effective_status", limit=100)["data"]:
+        for ad in get(f"{adset['id']}/ads", fields="name,status,effective_status,issues_info", limit=100)["data"]:
             print(f"    ad '{ad['name']}': {ad['status']} / {ad['effective_status']}")
+            for issue in ad.get("issues_info", []):
+                print(f"      issue: {issue.get('error_summary')}")
     print(f"\nCombined daily budget: {money(total)} {currency}/day")
 
 
