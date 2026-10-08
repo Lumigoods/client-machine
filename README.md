@@ -26,8 +26,15 @@ A campaign counts as part of the project when its name contains `CM`
    - **Ad Account ID**: in Ads Manager, the number next to your account name.
      You can include the `act_` prefix or leave it off.
 
-3. Provide them. Environment variables are the recommended way, because they
-   keep the token out of git:
+3. Provide them. In a Claude Code cloud environment, store the token as a
+   **network secret** (Edit environment -> Network secrets -> Add secret):
+   credential type Bearer, allowed websites `graph.facebook.com` and
+   `graph-video.facebook.com`, header `Authorization` with prefix `Bearer` and
+   the token as the value. The proxy adds it to every Graph API request, so
+   leave `META_ACCESS_TOKEN` unset and put `META_AD_ACCOUNT_ID=1234567890`
+   under Environment variables.
+
+   Anywhere else, use environment variables, which keep the token out of git:
 
    ```bash
    export META_ACCESS_TOKEN="your-token"

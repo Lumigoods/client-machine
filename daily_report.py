@@ -32,6 +32,8 @@ import requests
 
 META_TOKEN = os.environ.get("META_ACCESS_TOKEN", "")
 AD_ACCOUNT_ID = os.environ.get("META_AD_ACCOUNT_ID", "")
+# Without a token, it comes from a network secret added by the proxy.
+META_AUTH = {"access_token": META_TOKEN} if META_TOKEN else {}
 GUMROAD_TOKEN = os.environ.get("GUMROAD_ACCESS_TOKEN", "")
 GUMROAD_PRODUCT_ID = os.environ.get("GUMROAD_PRODUCT_ID", "")
 API_VERSION = os.environ.get("META_API_VERSION", "v23.0")
@@ -57,7 +59,7 @@ def meta_daily_ad_rows(account_id, keyword, since, until):
     """Return one insights row per ad per day for campaigns matching the keyword."""
     url = f"https://graph.facebook.com/{API_VERSION}/{account_id}/insights"
     params = {
-        "access_token": META_TOKEN,
+        **META_AUTH,
         "level": "ad",
         "time_increment": 1,
         "time_range": json.dumps({"since": since.isoformat(), "until": until.isoformat()}),
@@ -127,12 +129,12 @@ def main():
                         help="Exchange rate for converting ad spend to USD (default 4.20; update it)")
     args = parser.parse_args()
 
-    if not META_TOKEN or not AD_ACCOUNT_ID:
-        sys.exit("Set META_ACCESS_TOKEN and META_AD_ACCOUNT_ID (see README.md).")
+    if not AD_ACCOUNT_ID:
+        sys.exit("Set META_AD_ACCOUNT_ID, and META_ACCESS_TOKEN unless the token is a network secret (see README.md).")
     account_id = AD_ACCOUNT_ID if AD_ACCOUNT_ID.startswith("act_") else f"act_{AD_ACCOUNT_ID}"
 
     account = fetch_json(f"https://graph.facebook.com/{API_VERSION}/{account_id}",
-                         {"access_token": META_TOKEN, "fields": "currency,timezone_name"}, "Meta Graph")
+                         {**META_AUTH, "fields": "currency,timezone_name"}, "Meta Graph")
     if "error" in account:
         sys.exit(f"Graph API error: {account['error'].get('message')}")
     tz = ZoneInfo(account["timezone_name"])

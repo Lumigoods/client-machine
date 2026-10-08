@@ -42,7 +42,9 @@ DEFAULT_CAMPAIGN_ID = "120249369863180192"  # CM · Validation · W1
 
 
 def call(method, path, **params):
-    params["access_token"] = ACCESS_TOKEN
+    if ACCESS_TOKEN and "YOUR_" not in ACCESS_TOKEN:
+        # Without it, the token comes from a network secret added by the proxy.
+        params["access_token"] = ACCESS_TOKEN
     try:
         if method == "GET":
             resp = requests.get(f"{BASE_URL}/{path}", params=params, timeout=60)
@@ -93,8 +95,8 @@ def main():
                         help="Make the changes (default is a dry run)")
     args = parser.parse_args()
 
-    if "YOUR_" in ACCESS_TOKEN or "YOUR_" in AD_ACCOUNT_ID:
-        sys.exit("Set META_ACCESS_TOKEN and META_AD_ACCOUNT_ID (see README.md).")
+    if "YOUR_" in AD_ACCOUNT_ID:
+        sys.exit("Set META_AD_ACCOUNT_ID, and META_ACCESS_TOKEN unless the token is a network secret (see README.md).")
     account_id = AD_ACCOUNT_ID if AD_ACCOUNT_ID.startswith("act_") else f"act_{AD_ACCOUNT_ID}"
     countries = [c.strip().upper() for c in args.countries.split(",") if c.strip()]
 

@@ -31,7 +31,7 @@ import json
 import os
 import sys
 
-from backup_creatives import (AD_ACCOUNT_ID, ACCESS_TOKEN, CREATIVE_FIELDS, DEFAULT_CAMPAIGN_ID,
+from backup_creatives import (AD_ACCOUNT_ID, CREATIVE_FIELDS, DEFAULT_CAMPAIGN_ID,
                               OUT_DIR, GraphError, backup_stem, collect_copy, copy_from_post,
                               get, media_for, post_media_items, source_creative)
 
@@ -61,8 +61,8 @@ def main():
     parser.add_argument("--output", default=OUTPUT_FILE)
     args = parser.parse_args()
 
-    if not ACCESS_TOKEN or not AD_ACCOUNT_ID:
-        sys.exit("Set META_ACCESS_TOKEN and META_AD_ACCOUNT_ID (see README.md).")
+    if not AD_ACCOUNT_ID:
+        sys.exit("Set META_AD_ACCOUNT_ID, and META_ACCESS_TOKEN unless the token is a network secret (see README.md).")
     account_id = AD_ACCOUNT_ID if AD_ACCOUNT_ID.startswith("act_") else f"act_{AD_ACCOUNT_ID}"
 
     try:

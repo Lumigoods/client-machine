@@ -29,7 +29,10 @@ BASE_URL = f"https://graph.facebook.com/{API_VERSION}"
 def graph_get(path, params):
     """GET a Graph API edge and follow pagination, returning all rows."""
     url = f"{BASE_URL}/{path}"
-    params = {**params, "access_token": ACCESS_TOKEN}
+    params = dict(params)
+    if ACCESS_TOKEN and "YOUR_" not in ACCESS_TOKEN:
+        # Without it, the token comes from a network secret added by the proxy.
+        params["access_token"] = ACCESS_TOKEN
     rows = []
     while url:
         try:
@@ -143,8 +146,8 @@ def main():
     parser.add_argument("--keyword", default=PROJECT_KEYWORD, help="Campaign name filter")
     args = parser.parse_args()
 
-    if "YOUR_" in ACCESS_TOKEN or "YOUR_" in AD_ACCOUNT_ID:
-        sys.exit("Set your Access Token and Ad Account ID (see README.md).")
+    if "YOUR_" in AD_ACCOUNT_ID:
+        sys.exit("Set META_AD_ACCOUNT_ID, and META_ACCESS_TOKEN unless the token is a network secret (see README.md).")
 
     account_id = AD_ACCOUNT_ID if AD_ACCOUNT_ID.startswith("act_") else f"act_{AD_ACCOUNT_ID}"
 

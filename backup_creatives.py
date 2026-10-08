@@ -49,7 +49,9 @@ class GraphError(Exception):
 
 
 def get(path, **params):
-    params["access_token"] = ACCESS_TOKEN
+    if ACCESS_TOKEN:
+        # Without it, the token comes from a network secret added by the proxy.
+        params["access_token"] = ACCESS_TOKEN
     try:
         body = requests.get(f"{BASE_URL}/{path}", params=params, timeout=60).json()
     except (requests.RequestException, ValueError) as exc:
@@ -299,8 +301,8 @@ def main():
     parser.add_argument("--out-dir", default=OUT_DIR)
     args = parser.parse_args()
 
-    if not ACCESS_TOKEN or not AD_ACCOUNT_ID:
-        sys.exit("Set META_ACCESS_TOKEN and META_AD_ACCOUNT_ID (see README.md).")
+    if not AD_ACCOUNT_ID:
+        sys.exit("Set META_AD_ACCOUNT_ID, and META_ACCESS_TOKEN unless the token is a network secret (see README.md).")
     account_id = AD_ACCOUNT_ID if AD_ACCOUNT_ID.startswith("act_") else f"act_{AD_ACCOUNT_ID}"
     os.makedirs(args.out_dir, exist_ok=True)
 
