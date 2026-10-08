@@ -98,3 +98,17 @@ python daily_report.py --days 7 --myr-per-usd 4.20
 
 Update `--myr-per-usd` to the current exchange rate. Without a Gumroad token
 the report shows the Meta side only.
+
+## backup_creatives.py
+
+Backs up every ad's creative in the campaign: images and videos go to
+`assets/creative_backup/`, and the primary text, headlines, descriptions,
+call-to-action buttons and links go to `assets/creative_backup/ad_copy_backup.txt`.
+Any media file it can't download is listed in that file with its URL.
+
+```bash
+python backup_creatives.py
+```
+
+For ads built from existing Page posts, reading the post's copy needs the
+`pages_read_engagement` permission on the token.
