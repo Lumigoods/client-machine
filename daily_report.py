@@ -6,7 +6,8 @@ from the Meta Graph API, and daily sales from the Gumroad API, then prints:
 
 - one row per day: spend, landing page views, sales, revenue, cost per sale
   and ROAS (revenue / spend, both in USD)
-- one row per ad for the whole period
+- one row per ad for the whole period, with the Purchases the Meta pixel
+  attributed to it, their value, and ROAS (purchase value / spend)
 - the break-even cost per sale, so you can see at a glance whether ads pay
 
 Days are counted in the ad account's time zone. Meta spend is converted to
@@ -63,7 +64,7 @@ def meta_daily_ad_rows(account_id, keyword, since, until):
         "level": "ad",
         "time_increment": 1,
         "time_range": json.dumps({"since": since.isoformat(), "until": until.isoformat()}),
-        "fields": "ad_id,ad_name,adset_name,spend,impressions,inline_link_clicks,actions",
+        "fields": "ad_id,ad_name,adset_name,spend,impressions,inline_link_clicks,actions,action_values",
         "filtering": json.dumps(
             [{"field": "campaign.name", "operator": "CONTAIN", "value": keyword}]
         ),
@@ -116,6 +117,17 @@ def landing_page_views(row):
     return 0
 
 
+# Meta reports the same pixel purchase under several action types; use the
+# first one present so it isn't counted twice.
+PURCHASE_TYPES = ("offsite_conversion.fb_pixel_purchase", "purchase", "omni_purchase")
+
+
+def pixel_purchases(row, field):
+    """Pixel purchases ('actions') or their value ('action_values') in a row."""
+    found = {a["action_type"]: float(a["value"]) for a in row.get(field, [])}
+    return next((found[t] for t in PURCHASE_TYPES if t in found), 0.0)
+
+
 def fmt_ratio(value, suffix=""):
     return "-" if value is None else f"{value:,.2f}{suffix}"
 
@@ -147,7 +159,8 @@ def main():
     sales = gumroad_sales(since, until, tz)
 
     by_day = defaultdict(lambda: {"spend": 0.0, "lpv": 0, "clicks": 0, "sales": 0, "revenue": 0.0})
-    by_ad = defaultdict(lambda: {"adset": "", "spend": 0.0, "impressions": 0, "clicks": 0, "lpv": 0})
+    by_ad = defaultdict(lambda: {"adset": "", "spend": 0.0, "impressions": 0, "clicks": 0, "lpv": 0,
+                                 "purchases": 0, "purchase_value": 0.0})
     for r in rows:
         day = dt.date.fromisoformat(r["date_start"])
         spend = float(r.get("spend", 0))
@@ -160,6 +173,8 @@ def main():
         ad["impressions"] += int(r.get("impressions", 0))
         ad["clicks"] += int(r.get("inline_link_clicks", 0))
         ad["lpv"] += landing_page_views(r)
+        ad["purchases"] += int(pixel_purchases(r, "actions"))
+        ad["purchase_value"] += pixel_purchases(r, "action_values")
     for day, price in sales or []:
         by_day[day]["sales"] += 1
         by_day[day]["revenue"] += price
@@ -188,14 +203,18 @@ def main():
     print("-" * len(header))
     print(_day_line("TOTAL", tot, rate))
 
-    print(f"\nBy ad ({since} to {until})")
-    header = f"{'Ad':<20} {'Spend ' + currency:>11} {'Impr':>6} {'Clicks':>7} {'LPV':>5} {'Cost/LPV':>9}"
+    print(f"\nBy ad ({since} to {until}); purchases are what the Meta pixel attributed to each ad")
+    header = (f"{'Ad':<20} {'Spend ' + currency:>11} {'Impr':>6} {'Clicks':>7} {'LPV':>5} "
+              f"{'Cost/LPV':>9} {'Purch':>6} {'Value ' + currency:>11} {'ROAS':>6}")
     print(header)
     print("-" * len(header))
     for name, a in sorted(by_ad.items()):
         cost_lpv = a["spend"] / a["lpv"] if a["lpv"] else None
+        # Meta reports purchase value in the account currency, same as spend.
+        roas = a["purchase_value"] / a["spend"] if a["spend"] else None
         print(f"{name[:20]:<20} {a['spend']:>11,.2f} {a['impressions']:>6,} {a['clicks']:>7,} "
-              f"{a['lpv']:>5,} {fmt_ratio(cost_lpv):>9}")
+              f"{a['lpv']:>5,} {fmt_ratio(cost_lpv):>9} {a['purchases']:>6,} "
+              f"{a['purchase_value']:>11,.2f} {fmt_ratio(roas, 'x'):>6}")
 
     spend_usd = tot["spend"] / rate
     print()

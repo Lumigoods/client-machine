@@ -95,7 +95,9 @@ It is safe to re-run after a partial failure; it reuses what it already made.
 
 Daily ad spend vs. Gumroad sales for the USD 47 product: spend, clicks,
 landing page views, sales, revenue, cost per sale and ROAS per day, a per-ad
-breakdown, and the break-even cost per sale after Gumroad's fees.
+breakdown with the Purchases the Meta pixel attributed to each ad, their value
+and ROAS (purchase value / spend, both in the account currency), and the
+break-even cost per sale after Gumroad's fees.
 
 ```bash
 export GUMROAD_ACCESS_TOKEN="your-gumroad-token"   # optional
@@ -132,4 +134,21 @@ and matching backup file in `assets/creative_backup/`.
 ```bash
 python backup_creatives.py   # optional first: fills in backup_file paths
 python save_ad_metadata.py
+```
+
+## launch_campaign.py
+
+Builds a new, fully paused `CM` campaign from `original_ads_structure.json` in
+ad account `act_2524309034712212` for the LumiGoods Page: uploads the 6 backup
+videos, makes one creative per ad (9x16 on Stories and Reels, 4x5 everywhere
+else, Page identity, no Instagram account), and creates a Traffic campaign with
+3 ad sets (landing page views, US, 18-44, the 6 interests, RM 6.66/day each),
+one ad each, tracking pixel `2239569883568957`. Needs `ads_management`, and the
+Meta app behind the token must be in Live mode to create creatives.
+
+Every new ID goes to `new_campaign.json`, so it is safe to re-run.
+
+```bash
+python launch_campaign.py              # build, all paused
+python launch_campaign.py --previews   # write ad_previews.html (every placement)
 ```
