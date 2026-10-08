@@ -153,3 +153,25 @@ Every new ID goes to `new_campaign.json`, so it is safe to re-run.
 python launch_campaign.py              # build, all paused
 python launch_campaign.py --previews   # write ad_previews.html (every placement)
 ```
+
+## final_check.py
+
+Read-only pre-launch check of the relaunch campaign: paused status, budgets,
+targeting, video mapping (ad → creative → uploaded video → local `_music` file
+by SHA-256), unchanged picture versus the original, copy, links and UTM tags,
+pixel tracking, identity, music license records and audio levels, and delivery
+issues. Exits non-zero if anything fails.
+
+```bash
+python final_check.py
+```
+
+## add_music.py
+
+Composes an original background track for each ad (no samples or stock music;
+see `assets/music/LICENSE.md`) and writes `_music` copies of the videos next to
+the originals, copying the video stream untouched.
+
+```bash
+python add_music.py all
+```

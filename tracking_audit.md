@@ -113,3 +113,13 @@ truth for sales.
    if the test shows the browser Purchase is missing or unreliable.
 5. Allow `lumigoods.gumroad.com` in this environment's network settings so
    the redirect and UTM check can be automated.
+
+## Changes applied (2026-10-08, approved)
+
+- Automatic advanced matching turned **on** for `2239569883568957`
+  (fields: em, ph, fn, ln, ct, st, zp, country, external_id). Confirmed by
+  reading the setting back.
+- No Conversions API and no Gumroad token, by decision (see Split monitoring).
+
+Re-run `python final_check.py` before launch; it checks pixel and ad settings
+read-only.

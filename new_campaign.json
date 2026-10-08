@@ -45,11 +45,13 @@
       "ads": {
         "9x16": {
           "ad_id": "120249405426070192",
-          "creative_id": "2117601525810509"
+          "creative_id": "979952665173202",
+          "silent_creative_id": "2117601525810509"
         },
         "4x5": {
           "ad_id": "120249405427680192",
-          "creative_id": "1092648250157576"
+          "creative_id": "1771877710712944",
+          "silent_creative_id": "1092648250157576"
         }
       }
     },
@@ -58,11 +60,13 @@
       "ads": {
         "9x16": {
           "ad_id": "120249405429010192",
-          "creative_id": "1089425390526985"
+          "creative_id": "1798461015616802",
+          "silent_creative_id": "1089425390526985"
         },
         "4x5": {
           "ad_id": "120249405430140192",
-          "creative_id": "4445275159017800"
+          "creative_id": "2141863053430637",
+          "silent_creative_id": "4445275159017800"
         }
       }
     },
@@ -71,13 +75,47 @@
       "ads": {
         "9x16": {
           "ad_id": "120249405430940192",
-          "creative_id": "2469450700213334"
+          "creative_id": "1415870884942290",
+          "silent_creative_id": "2469450700213334"
         },
         "4x5": {
           "ad_id": "120249405432370192",
-          "creative_id": "1795788738410135"
+          "creative_id": "1983385968996952",
+          "silent_creative_id": "1795788738410135"
         }
       }
+    }
+  },
+  "music_videos": {
+    "CM_Ad1_Problem_FINAL_4x5_music.mp4": {
+      "video_id": "3052753771722443",
+      "sha256": "71cbab822a9c53029aaa047a37570ec0cad3179181cc5ff7b700e5c569dec3d0",
+      "length": 21
+    },
+    "CM_Ad1_Problem_FINAL_9x16_music.mp4": {
+      "video_id": "1898984667942802",
+      "sha256": "b244809814419cc932a3a68d9c9aaeb4d5f580f3ad0a15bce9e19310953c6172",
+      "length": 21
+    },
+    "CM_Ad2_Workflow_FINAL_4x5_music.mp4": {
+      "video_id": "1001781092938120",
+      "sha256": "e4eff858e6ed0dd821dc1d13119075c8efe861e6b6c8f96d8184d3c42354d3fc",
+      "length": 22.6
+    },
+    "CM_Ad2_Workflow_FINAL_9x16_music.mp4": {
+      "video_id": "1074277942079752",
+      "sha256": "95174fcf4724b16bbb88a2437272097dbf751b8c4fad0d07993660bebfe6d54c",
+      "length": 22.6
+    },
+    "CM_Ad3_Demo_FINAL_4x5_music.mp4": {
+      "video_id": "2028503944533497",
+      "sha256": "a717ee5573817f3aba259434567d7c33e8bbf7da754e325ce1ca3f377012aadb",
+      "length": 23.4
+    },
+    "CM_Ad3_Demo_FINAL_9x16_music.mp4": {
+      "video_id": "27743756695299588",
+      "sha256": "6f13686010bbca172a6b0d0e47cfbedfbd4d50e98808873367bb818b593024ee",
+      "length": 23.4
     }
   }
 }
