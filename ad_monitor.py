@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch active campaign metrics for the 'cowork' project from the Meta Graph API.
+"""Fetch active campaign metrics for the 'CM' project from the Meta Graph API.
 
 Prints Spend, Impressions, Clicks and CTR for every ACTIVE campaign in the
 ad account whose name contains the project keyword.
@@ -19,7 +19,7 @@ ACCESS_TOKEN = os.environ.get("META_ACCESS_TOKEN", "YOUR_ACCESS_TOKEN_HERE")
 AD_ACCOUNT_ID = os.environ.get("META_AD_ACCOUNT_ID", "YOUR_AD_ACCOUNT_ID_HERE")
 
 API_VERSION = os.environ.get("META_API_VERSION", "v23.0")
-PROJECT_KEYWORD = "cowork"
+PROJECT_KEYWORD = "CM"
 # -----------------------------------------------------------------------------
 
 BASE_URL = f"https://graph.facebook.com/{API_VERSION}"

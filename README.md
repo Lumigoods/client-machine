@@ -3,10 +3,10 @@
 ## ad_monitor.py
 
 Pulls metrics for the **active** Meta (Facebook/Instagram) ad campaigns in the
-`cowork` project and prints Spend, Impressions, Clicks and CTR per campaign,
+`CM` project and prints Spend, Impressions, Clicks and CTR per campaign,
 plus a total row.
 
-A campaign counts as part of the project when its name contains `cowork`
+A campaign counts as part of the project when its name contains `CM`
 (case-insensitive).
 
 ### Setup
@@ -48,11 +48,11 @@ python ad_monitor.py --keyword other-project
 Example output:
 
 ```
-Active 'cowork' campaigns in act_1234567890 (last_7d)
+Active 'CM' campaigns in act_1234567890 (last_7d)
 
 Campaign                                        Spend  Impressions   Clicks   CTR %
 -----------------------------------------------------------------------------------
-Cowork - Spring Launch                         152.40       48,210      913    1.89
+CM · Spring Launch                             152.40       48,210      913    1.89
 -----------------------------------------------------------------------------------
 TOTAL                                          152.40       48,210      913    1.89
 ```
