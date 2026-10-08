@@ -31,8 +31,13 @@ def graph_get(path, params):
     params = {**params, "access_token": ACCESS_TOKEN}
     rows = []
     while url:
-        resp = requests.get(url, params=params, timeout=30)
-        body = resp.json()
+        try:
+            resp = requests.get(url, params=params, timeout=30)
+            body = resp.json()
+        except (requests.RequestException, ValueError) as exc:
+            # Don't print the exception: its URL contains the access token.
+            sys.exit(f"Could not reach the Graph API ({type(exc).__name__}). "
+                     "Check your network connection and try again.")
         if "error" in body:
             err = body["error"]
             sys.exit(f"Graph API error ({err.get('code')}): {err.get('message')}")
