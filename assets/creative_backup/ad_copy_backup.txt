@@ -1,0 +1,94 @@
+Ad copy backup - campaign 'CM · Validation · W1' (120249369863180192)
+Taken 2026-10-08 06:54 UTC, 5 ads
+
+=== Ad1 · Problem (ad 120249369863170192, CAMPAIGN_PAUSED)
+Ad set: W1 · EN-6 · 18-44 · Editors interests · Manual placements · Ad1 · Problem
+Creative: Client acquisition system for video editors 2026-10-07-3324e2a8fbd76d4ab65c48a71ee89964 (2012388152782644)
+Post: 1423896704133180_122105266911495917
+
+Primary text:
+For beginner and early-stage freelance video editors.
+
+The edit is usually the part you've practised. What's often missing is everything around it: what to offer, who to contact, what to say, when to follow up and how to price a project.
+
+CLIENT MACHINE turns that into one repeatable workflow:
+• 10 connected workbooks (192 pages)
+• a day-by-day 30-day plan
+• an outreach and follow-up script library
+• a working Prospect Tracker spreadsheet
+
+No guaranteed clients and no hype. A structured routine you can run, measure and improve.
+
+$47 USD, one-time. Instant download.
+
+Headline: Client acquisition system for video editors
+Description: $47 one-time · 10 workbooks + tracker
+Call to action: LEARN_MORE
+Link: https://lumigoods.gumroad.com/l/client-machine?utm_campaign=cm-validation&utm_content=problem&utm_medium=paid&utm_source=meta
+
+Media files:
+  - NOT DOWNLOADED (ProxyError) - video 1074550711865392: https://video-ord5-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQMIRYotPteHG0L-liiUTOCjzmgkfzJ9MNgpZbjfhIXZYNJsFH6KKTsXnx5Sr74ZGu6Ub69MvihGmwsztZHM6S1mI6wKgsBbtIdLybVEwSd06g.mp4?_nc_cat=103&_nc_sid=5e9851&_nc_ht=video-ord5-2.xx.fbcdn.net&_nc_ohc=RWEe1bIn9AsQ7kNvwECmHXz&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE0NzcyNTQzMzc3ODc3MTYsImFzc2V0X2FnZV9kYXlzIjoxLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MjEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=b8a01a6c03f40da0&_nc_vs=HBkcFQIYRWZiX2VwaGVtZXJhbC8zN0U1QzE3RUE5NTk0RTBDQjY0RjUxOTI2RTJDMDQ1RF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaI3d_AwuOfBRUCKAJDMywXQDUAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZd6oAQA&_nc_gid=BzBO5sNtCgjieIz9gDDlgw&edm=AM_bLsMEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQK5UBlZB_6eL7yVVwdPe0s_a6IJ0uYkFvm3Z8vZozaRHMMOX0vMP40WPdDVJceQXRWAM9Jods7PLA&_nc_eui2=AeGvVkxrPJsjF5CWQaTNb0mgZvFZfdxMIENm8Vl93EwgQ0hvh6CPcpykwdcmAM9IGR4&oh=00_AQNoUSz3NzzJe1xZVxAx_SaN4DauY1Lk6y2DVty9zHOLlQ&oe=6ACD26D9&bitrate=0&tag=dash_h264-basic-gen2_720p
+  - NOT DOWNLOADED (ProxyError) - video 1416097756629894: https://video-ord5-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQOfxN3ag3IqpEvdyB2C2Pb2CRYwQ5-ZrtdYU4ogtJKUdOZY9oVwmQW2jNXXG9bae5FCBiNJCXYRFZlUPfn-E0dTAeUtw9Rmcs7OJ1lefiA1Lw.mp4?_nc_cat=103&_nc_sid=5e9851&_nc_ht=video-ord5-2.xx.fbcdn.net&_nc_ohc=e3UypbQB_WAQ7kNvwGpWbzd&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE0MzAxOTg5NTE3NzY4MjcsImFzc2V0X2FnZV9kYXlzIjoxLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MjEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=88b217c653d94f01&_nc_vs=HBkcFQIYRWZiX2VwaGVtZXJhbC9EQ0I3M0YxMTAwMjQ0NTY4QjJDQTlFQjhFMTgwODY2MV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb2yNTHxLCKBRUCKAJDMywXQDUAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZd6oAQA&_nc_gid=BzBO5sNtCgjieIz9gDDlgw&edm=AM_bLsMEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQLUBHdpYvcCQCFxK061I_a7A0RJrjwymHTiVfwWUNo6DjMep4l0Uss4DdGGxYNBcqEXlL9DLIgC0w&_nc_eui2=AeHzGoGM-OYJbwWRb1vqyIWuGzFFOo2dCe0bMUU6jZ0J7cZNASRg-YDXvvBfdhSfTpk&oh=00_AQMM2uVHyxioIYb-9L-IdOavI4DLydJ7c-6PbMNZ42vLbQ&oe=6ACD03C9&bitrate=0&tag=dash_h264-basic-gen2_720p
+Note: copy and media taken from original creative 4534143046849861 (the ad now uses 2012388152782644, which only references the post)
+
+=== Ad2 · Workflow (ad 120249370896330192, WITH_ISSUES)
+Ad set: W1 · EN-6 · 18-44 · Editors interests · Manual placements · Ad1 · Problem
+Creative: The 10-step client workflow for editors 2026-10-06-07757da4a7cc05b8e947b44771375b52 (949075014454096)
+Post: 1423896704133180_122105266917495917
+
+Primary text:
+Beginner video editors: getting clients isn't one skill. It's a sequence.
+
+Offer → price → proof → prospects → outreach → follow-up → conversation → proposal → onboarding → delivery.
+
+It's easy to jump straight to cold DMs and skip the offer and the follow-up. CLIENT MACHINE gives each step a worksheet, script, checklist or tracker, plus a 30-day plan that sets out what to do each day.
+
+It won't contact anyone for you, and it can't promise results. It gives you a process you can repeat.
+
+$47 USD, one-time.
+
+Headline: The 10-step client workflow for editors
+Description: 30-day plan · scripts · tracker
+Call to action: LEARN_MORE
+Link: https://lumigoods.gumroad.com/l/client-machine?utm_campaign=cm-validation&utm_content=workflow&utm_medium=paid&utm_source=meta
+
+Media files:
+  - NOT DOWNLOADED (ProxyError) - video 1646347997141256: https://video-ord5-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQMwYJkd-0pxXEMyDn6l0VBG2aNswlGNqEaAozvCkSqs-3l8KviMaco4dDeVTWcItO3vA-QjcJYrSDi91FgXh61kYf5win8U_pHlZf9X3stkQw.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=video-ord5-2.xx.fbcdn.net&_nc_ohc=j9N-EIa7KmoQ7kNvwET_ROH&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2MTY0MDE2MTY5NDg5OTUsImFzc2V0X2FnZV9kYXlzIjoxLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MjIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=64b6ee14c672a8b0&_nc_vs=HBkcFQIYRWZiX2VwaGVtZXJhbC9GQjA1MEFDRUZENUI0OEEwOTMzQTJEMDFDNDBEOUU3MV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaGvIrD-obfBRUCKAJDMywXQDaZmZmZmZoYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZd6oAQA&_nc_gid=BzBO5sNtCgjieIz9gDDlgw&edm=AM_bLsMEAAAA&_nc_zt=28&_nc_eui2=AeEGdYAoJaux_cb1kD2vKfAahd89Rp9jjJ6F3z1Gn2OMnntZmO3EdS5a_rmVw0a-OzE&_nc_tpa=Q5bMBQJ5T7v6PJMl4PLzjzscWxC8eU70zXu_qr3gX5Uf6ZsB7Yic_UFtbH2JEwzBM1hawUpaBcRPBNdDzQ&oh=00_AQNXVLsZz_JMfiO4Q8INRAQ3WCZwviSvk1LWHVaYkCC7RA&oe=6ACCFCB2&bitrate=0&tag=dash_h264-basic-gen2_720p
+  - NOT DOWNLOADED (ProxyError) - video 28540853032210523: https://video-ord5-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQOZEw8Eh7uTUpUIV4xiZWQCkbu6hpQi01kmrRSdPVJIctpy50w0AVpP90TAgoezaoU2-62Nr1T18MN2UDouJWJH93tMogQbk-VX4Ml6eNskng.mp4?_nc_cat=104&_nc_sid=5e9851&_nc_ht=video-ord5-2.xx.fbcdn.net&_nc_ohc=i1VRhJF0_3cQ7kNvwGhg7_J&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI2NTM4NDk0NDgzODA5OTksImFzc2V0X2FnZV9kYXlzIjoxLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MjIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=d16d8c3d8612a7e1&_nc_vs=HBkcFQIYRWZiX2VwaGVtZXJhbC80QTc1NUIzQUQ0M0U0MEY3QjNDNkE3MEFBNUI1MThBNF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaO6cOar-q2CRUCKAJDMywXQDaZmZmZmZoYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZd6oAQA&_nc_gid=BzBO5sNtCgjieIz9gDDlgw&edm=AM_bLsMEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQL28oqM3K1noafa_N8MmddVIFmDtxggI4kmpgMS7_-ZI-B9EyZhCarbPsCDaTL-E3hgXUu4zC7dJA&_nc_eui2=AeE7OlPnVQZrPXiT1JtKS9MAZKMLvQEL8jlkowu9AQvyOdlcwSyFViP2pOZAzlkifrI&oh=00_AQPpgy7itDvfVjX5FqUeUtpHrIIculAI5MvNfDZP9uCoLw&oe=6ACD074C&bitrate=0&tag=dash_h264-basic-gen2_720p
+
+=== Ad2 · Workflow (ad 120249399805920192, WITH_ISSUES)
+Ad set: W1 · EN-6 · 18-44 · Editors interests · Manual placements · Ad2 · Workflow
+Same post as ad 120249370896330192; see above.
+
+=== Ad3 · Demo (ad 120249370958700192, WITH_ISSUES)
+Ad set: W1 · EN-6 · 18-44 · Editors interests · Manual placements · Ad1 · Problem
+Creative: See what's inside CLIENT MACHINE 2026-10-06-9b8aade589865be5b09cbcf56950c430 (1135370795513214)
+Post: 1423896704133180_122105266935495917
+
+Primary text:
+A look inside CLIENT MACHINE, the 30-day client acquisition system for beginner video editors.
+
+What you get, in one ZIP:
+• Start Here Guide + 30-Day Client Acquisition Plan
+• Offer Builder, Portfolio Builder, Pricing System
+• Outreach Script Library
+• Sales System, Proposal Kit, Client Onboarding Kit, Delivery & Retention
+• Prospect Tracker spreadsheet (.xlsx) with a Dashboard and Follow-Up Queue
+• 2 editable Canva templates (free Canva account needed)
+
+Some modules include AI drafting workflows. AI writes a draft; you check it and decide.
+
+$47 USD, one-time.
+
+Headline: See what's inside CLIENT MACHINE
+Description: 10 PDFs · 192 pages · tracker
+Call to action: LEARN_MORE
+Link: https://lumigoods.gumroad.com/l/client-machine?utm_campaign=cm-validation&utm_content=demo&utm_medium=paid&utm_source=meta
+
+Media files:
+  - NOT DOWNLOADED (ProxyError) - video 1982240102734737: https://video-ord5-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQP6ylmhDCJmOOxOLTxZ96Zn9gr64KUdN4Bph_h3O60capBorYtlfIGPywXldjactPOcsP88x7f_JKLW1A_10gnIqRkVztHcTT3pk-71nv_SnA.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=video-ord5-1.xx.fbcdn.net&_nc_ohc=KAWFYtXvyIsQ7kNvwH43TLj&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExMzAwNjc2NDYyNDIyMDAsImFzc2V0X2FnZV9kYXlzIjoxLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MjMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=9c830c418484ff59&_nc_vs=HBkcFQIYRWZiX2VwaGVtZXJhbC9BQjBDQTYyREI1NzQ0NUFGOURCNzQxMDA4M0U0NDBGMl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaw9oKKzPKBBBUCKAJDMywXQDdmZmZmZmYYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZd6oAQA&_nc_gid=BzBO5sNtCgjieIz9gDDlgw&edm=AM_bLsMEAAAA&_nc_zt=28&_nc_eui2=AeHjprBk_v1GEjtR_Pz7NtTfFUVCH1PB_9EVRUIfU8H_0bjGRigi2Zk2vOXDZNXigFs&_nc_tpa=Q5bMBQIND_awt3T2qYMfLibd_qazcg-PpLkYxjhFxKjp-w7gunjWWsjnYtwWu4rYS3BRonmksqLt7qOweA&oh=00_AQN6Ji-9_YHTGl708q44SWbyrZQhm3rex7v4YqMC4T-IEw&oe=6ACD0797&bitrate=0&tag=dash_h264-basic-gen2_720p
+  - NOT DOWNLOADED (ProxyError) - video 2536756630126896: https://video-ord5-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQME9-_EMPhergusJApkRF8rjqC7-h-115Ok-HlzI4UuPSLnFH4UC0CL7HXv0R6_kXw4yIB7OehKkoHgX5cHpo4q5pj8-ME-f0cTektXq8QhgQ.mp4?_nc_cat=106&_nc_sid=5e9851&_nc_ht=video-ord5-1.xx.fbcdn.net&_nc_ohc=QwrVhMDmkn4Q7kNvwG--lhi&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjIxMDg4NDUzMjMwNjg2MDcsImFzc2V0X2FnZV9kYXlzIjoxLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MjMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=c2e247c5314e14fc&_nc_vs=HBkcFQIYRWZiX2VwaGVtZXJhbC9DNzNDNjIwMTRENkY0RkIzOThCNkUzMDM3MUI3QTg3Nl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb-kvGF-v6-BxUCKAJDMywXQDdmZmZmZmYYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZd6oAQA&_nc_gid=BzBO5sNtCgjieIz9gDDlgw&edm=AM_bLsMEAAAA&_nc_zt=28&_nc_eui2=AeEos9j6NSG0WkXv8xyqbeGxpnJtQxdHQxqmcm1DF0dDGu4KBzY-mxMcN9V0MlKHpuw&_nc_tpa=Q5bMBQLQ4w_HdkzNn-CCcfy5RNj_wEvCbKaONOyF-VY06FsTYV2urjOumeBnSTsHH6qWh1Oe6xqqgys7PQ&oh=00_AQODI_bjdPhbBioHocVrlOYhqCl9tpxcSjsabw8r9WmLrA&oe=6ACD2C16&bitrate=0&tag=dash_h264-basic-gen2_720p
+
+=== Ad3 · Demo (ad 120249399829330192, WITH_ISSUES)
+Ad set: W1 · EN-6 · 18-44 · Editors interests · Manual placements · Ad3 · Demo
+Same post as ad 120249370958700192; see above.

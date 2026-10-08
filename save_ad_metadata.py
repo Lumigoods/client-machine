@@ -33,7 +33,7 @@ import sys
 
 from backup_creatives import (AD_ACCOUNT_ID, ACCESS_TOKEN, CREATIVE_FIELDS, DEFAULT_CAMPAIGN_ID,
                               OUT_DIR, GraphError, backup_stem, collect_copy, copy_from_post,
-                              get, media_for, post_media_items)
+                              get, media_for, post_media_items, source_creative)
 
 OUTPUT_FILE = "original_ads_structure.json"
 SCHEMA_VERSION = 1
@@ -45,7 +45,7 @@ ADSET_FIELDS = ("name,status,daily_budget,lifetime_budget,start_time,end_time,"
                 "optimization_goal,billing_event,bid_strategy,bid_amount,destination_type,"
                 "promoted_object,attribution_spec,pacing_type,targeting")
 AD_FIELDS = (f"id,name,status,effective_status,created_time,adset_id,tracking_specs,"
-             f"conversion_domain,creative{{{CREATIVE_FIELDS},url_tags,instagram_user_id}}")
+             f"conversion_domain,creative{{{CREATIVE_FIELDS}}}")
 
 
 def backup_file_for(stem):
@@ -88,8 +88,9 @@ def main():
                 sys.exit(f"Graph API error reading ad set {ad['adset_id']}: {exc}")
 
         notes = []
-        copy = collect_copy(creative)
-        media = media_for(creative, account_id, notes)
+        src = source_creative(account_id, creative, notes)
+        copy = collect_copy(src)
+        media = media_for(src, account_id, notes, name)
         post_id = creative.get("effective_object_story_id")
         if post_id and (not copy["primary_text"] or not media):
             post_media = copy_from_post(post_id, copy, notes)
@@ -105,7 +106,9 @@ def main():
                 "uploaded_file_name": item.get("name"),
                 "backup_file": backup_file_for(stem),
                 "backup_file_stem": stem,
-                **{k: item[k] for k in ("width", "height", "length_seconds") if item.get(k)},
+                **{k: item[k] for k in ("width", "height", "length_seconds", "aspect_ratio",
+                                        "library_video_id", "placements", "match_basis")
+                   if item.get(k)},
             })
         if not media_out:
             notes.append("no media found for this creative")
@@ -123,11 +126,13 @@ def main():
                 "creative_id": creative["id"],
                 "name": creative.get("name"),
                 "object_type": creative.get("object_type"),
+                "source_creative_id": src["id"],
+                "source_creative_name": src.get("name"),
                 "object_story_id": post_id,
-                "instagram_user_id": creative.get("instagram_user_id"),
-                "object_story_spec": creative.get("object_story_spec"),
-                "asset_feed_spec": creative.get("asset_feed_spec"),
-                "url_tags": creative.get("url_tags"),
+                "instagram_user_id": src.get("instagram_user_id") or creative.get("instagram_user_id"),
+                "object_story_spec": src.get("object_story_spec") or creative.get("object_story_spec"),
+                "asset_feed_spec": src.get("asset_feed_spec") or creative.get("asset_feed_spec"),
+                "url_tags": src.get("url_tags") or creative.get("url_tags"),
                 "copy": {
                     "primary_text": copy["primary_text"],
                     "headline": copy["headline"],

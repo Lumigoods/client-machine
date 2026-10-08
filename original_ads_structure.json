@@ -1,0 +1,1035 @@
+{
+  "schema_version": 1,
+  "snapshot_taken_at": "2026-10-08T06:54:34+00:00",
+  "ad_account_id": "act_2524309034712212",
+  "campaign_id": "120249369863180192",
+  "campaign": {
+    "name": "CM · Validation · W1",
+    "status": "PAUSED",
+    "objective": "OUTCOME_TRAFFIC",
+    "buying_type": "AUCTION",
+    "start_time": "2026-10-07T00:00:00+0800",
+    "stop_time": "2026-10-13T23:59:00+0800",
+    "special_ad_categories": [],
+    "is_adset_budget_sharing_enabled": false
+  },
+  "ad_sets": {
+    "120249369863160192": {
+      "name": "W1 · EN-6 · 18-44 · Editors interests · Manual placements · Ad1 · Problem",
+      "status": "ACTIVE",
+      "daily_budget": "666",
+      "lifetime_budget": "0",
+      "start_time": "2026-10-07T00:00:00+0800",
+      "end_time": "2026-10-13T23:59:00+0800",
+      "optimization_goal": "LANDING_PAGE_VIEWS",
+      "billing_event": "IMPRESSIONS",
+      "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+      "destination_type": "UNDEFINED",
+      "attribution_spec": [
+        {
+          "event_type": "CLICK_THROUGH",
+          "window_days": 1
+        }
+      ],
+      "pacing_type": [
+        "standard"
+      ],
+      "targeting": {
+        "age_max": 44,
+        "age_min": 18,
+        "flexible_spec": [
+          {
+            "interests": [
+              {
+                "id": "6002966718646",
+                "name": "Adobe Premiere Pro"
+              },
+              {
+                "id": "6003095577470",
+                "name": "Final Cut Pro"
+              },
+              {
+                "id": "6003132802614",
+                "name": "Adobe After Effects"
+              },
+              {
+                "id": "6003374632277",
+                "name": "Freelancer (careers)"
+              },
+              {
+                "id": "6003439911912",
+                "name": "Fiverr"
+              },
+              {
+                "id": "6003456566340",
+                "name": "Video editing"
+              }
+            ]
+          }
+        ],
+        "geo_locations": {
+          "countries": [
+            "US"
+          ],
+          "location_types": [
+            "frequently_in",
+            "home",
+            "recent"
+          ]
+        },
+        "locales": [
+          6,
+          24
+        ],
+        "targeting_automation": {
+          "advantage_audience": 0
+        },
+        "publisher_platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "facebook_positions": [
+          "feed",
+          "story",
+          "facebook_reels"
+        ],
+        "instagram_positions": [
+          "stream",
+          "story",
+          "reels",
+          "explore_home"
+        ],
+        "device_platforms": [
+          "mobile",
+          "desktop"
+        ]
+      }
+    }
+  },
+  "ads": [
+    {
+      "name": "Ad1 · Problem",
+      "ad_id": "120249369863170192",
+      "created_time": "2026-10-06T20:55:52+0800",
+      "status": "ACTIVE",
+      "adset_id": "120249369863160192",
+      "tracking_specs": [
+        {
+          "action.type": [
+            "onsite_conversion"
+          ],
+          "conversion_id": [
+            "28804984619118579"
+          ]
+        },
+        {
+          "action.type": [
+            "offsite_conversion"
+          ],
+          "fb_pixel": [
+            "2239569883568957"
+          ]
+        },
+        {
+          "action.type": [
+            "onsite_conversion"
+          ]
+        },
+        {
+          "action.type": [
+            "onsite_conversion"
+          ],
+          "conversion_id": [
+            "28497571209894715",
+            "28534827709516793",
+            "28765832776384489",
+            "29041226572169482",
+            "29157060550544281",
+            "29456938620567458",
+            "29473630698906474",
+            "29859934460261160",
+            "39150420467904780",
+            "39336791339267681",
+            "39412126185067470"
+          ]
+        },
+        {
+          "action.type": [
+            "post_engagement"
+          ],
+          "page": [
+            "1423896704133180"
+          ],
+          "post": [
+            "122105266911495917"
+          ]
+        },
+        {
+          "action.type": [
+            "post_interaction_gross"
+          ],
+          "page": [
+            "1423896704133180"
+          ],
+          "post": [
+            "122105266911495917"
+          ]
+        },
+        {
+          "action.type": [
+            "link_click"
+          ],
+          "post": [
+            "122105266911495917"
+          ],
+          "post.wall": [
+            "1423896704133180"
+          ]
+        }
+      ],
+      "conversion_domain": null,
+      "creative": {
+        "creative_id": "2012388152782644",
+        "name": "Client acquisition system for video editors 2026-10-07-3324e2a8fbd76d4ab65c48a71ee89964",
+        "object_type": "SHARE",
+        "source_creative_id": "4534143046849861",
+        "source_creative_name": "Client acquisition system for video editors 2026-10-06-fc01b7d531a6cc2ec847e7b5da179335",
+        "object_story_id": "1423896704133180_122105266911495917",
+        "instagram_user_id": "17841426270756679",
+        "object_story_spec": {
+          "page_id": "1423896704133180",
+          "instagram_user_id": "17841426270756679"
+        },
+        "asset_feed_spec": {
+          "videos": [
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_f1a99dec90e151ea1",
+                  "id": "120249370855850192"
+                }
+              ],
+              "video_id": "1416097756629894",
+              "thumbnail_url": "https://scontent.fkul16-1.fna.fbcdn.net/v/t15.5256-10/838434748_1455535046435331_7197912352692383986_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=9KrajWP3OfwQ7kNvwGJBIlN&_nc_oc=AdrZmd8Rq3NkelM-TGxk7vha4OpOluJz-twduaJuTjeav_c0r8or23ObT-uhIEUJGso&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fkul16-1.fna&_nc_gid=qIGWj4RMCIbFLc0jKhrWeA&_nc_ss=7a22e&oh=00_AQOa8JQ7i4ZTDBx45WG8pS4byAemBqmI7xFmkI1ibIBJqA&oe=6ACACCF3"
+            },
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_fef271b0dd1253029",
+                  "id": "120249370855800192"
+                },
+                {
+                  "name": "placement_asset_ff7a597b9736db3d3",
+                  "id": "120249370855820192"
+                }
+              ],
+              "video_id": "1074550711865392",
+              "thumbnail_url": "https://scontent.fkul16-3.fna.fbcdn.net/v/t15.5256-10/836931644_2617423692051665_5913665080034273764_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=JanGyrSGuZ8Q7kNvwFZPFcT&_nc_oc=AdpJf6fVYxzPHLP1nbf4c1-jLF7zpKuit65VqRP-AyNSq_MnKBG-xACWeWcpWrkGy2Q&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fkul16-3.fna&_nc_gid=qIGWj4RMCIbFLc0jKhrWeA&_nc_ss=7a22e&oh=00_AQNQnW_wgbfbbLtnsj71Rx0PdjfeWnU7i_akP8xD3pgHCg&oe=6ACAB13E"
+            }
+          ],
+          "bodies": [
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_f05f20a69ec53b574",
+                  "id": "120249370855810192"
+                },
+                {
+                  "name": "placement_asset_f82c5aebc46979465",
+                  "id": "120249370855830192"
+                }
+              ],
+              "text": "For beginner and early-stage freelance video editors.\n\nThe edit is usually the part you've practised. What's often missing is everything around it: what to offer, who to contact, what to say, when to follow up and how to price a project.\n\nCLIENT MACHINE turns that into one repeatable workflow:\n• 10 connected workbooks (192 pages)\n• a day-by-day 30-day plan\n• an outreach and follow-up script library\n• a working Prospect Tracker spreadsheet\n\nNo guaranteed clients and no hype. A structured routine you can run, measure and improve.\n\n$47 USD, one-time. Instant download."
+            }
+          ],
+          "call_to_action_types": [
+            "LEARN_MORE"
+          ],
+          "descriptions": [
+            {
+              "text": "$47 one-time · 10 workbooks + tracker"
+            }
+          ],
+          "link_urls": [
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_f54a2fb7d306f336c",
+                  "id": "120249370855840192"
+                },
+                {
+                  "name": "placement_asset_f379634bbdf3433e0",
+                  "id": "120249370855860192"
+                }
+              ],
+              "website_url": "https://lumigoods.gumroad.com/l/client-machine?utm_campaign=cm-validation&utm_content=problem&utm_medium=paid&utm_source=meta",
+              "display_url": ""
+            }
+          ],
+          "titles": [
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_fcdd126407f052b43",
+                  "id": "120249370855870192"
+                },
+                {
+                  "name": "placement_asset_f0c77707e9ab3a889",
+                  "id": "120249370855880192"
+                }
+              ],
+              "text": "Client acquisition system for video editors"
+            }
+          ],
+          "ad_formats": [
+            "AUTOMATIC_FORMAT"
+          ],
+          "asset_customization_rules": [
+            {
+              "customization_spec": {
+                "age_max": 65,
+                "age_min": 13,
+                "publisher_platforms": [
+                  "facebook",
+                  "instagram"
+                ],
+                "facebook_positions": [
+                  "story",
+                  "facebook_reels"
+                ],
+                "instagram_positions": [
+                  "story",
+                  "reels"
+                ]
+              },
+              "video_label": {
+                "name": "placement_asset_fef271b0dd1253029",
+                "id": "120249370855800192"
+              },
+              "body_label": {
+                "name": "placement_asset_f05f20a69ec53b574",
+                "id": "120249370855810192"
+              },
+              "link_url_label": {
+                "name": "placement_asset_f54a2fb7d306f336c",
+                "id": "120249370855840192"
+              },
+              "title_label": {
+                "name": "placement_asset_f0c77707e9ab3a889",
+                "id": "120249370855880192"
+              },
+              "priority": 1
+            },
+            {
+              "customization_spec": {
+                "age_max": 65,
+                "age_min": 13
+              },
+              "video_label": {
+                "name": "placement_asset_f1a99dec90e151ea1",
+                "id": "120249370855850192"
+              },
+              "body_label": {
+                "name": "placement_asset_f82c5aebc46979465",
+                "id": "120249370855830192"
+              },
+              "link_url_label": {
+                "name": "placement_asset_f379634bbdf3433e0",
+                "id": "120249370855860192"
+              },
+              "title_label": {
+                "name": "placement_asset_fcdd126407f052b43",
+                "id": "120249370855870192"
+              },
+              "priority": 2
+            }
+          ],
+          "optimization_type": "PLACEMENT",
+          "additional_data": {
+            "multi_share_end_card": false,
+            "is_click_to_message": false
+          },
+          "reasons_to_shop": false,
+          "shops_bundle": false
+        },
+        "url_tags": null,
+        "copy": {
+          "primary_text": [
+            "For beginner and early-stage freelance video editors.\n\nThe edit is usually the part you've practised. What's often missing is everything around it: what to offer, who to contact, what to say, when to follow up and how to price a project.\n\nCLIENT MACHINE turns that into one repeatable workflow:\n• 10 connected workbooks (192 pages)\n• a day-by-day 30-day plan\n• an outreach and follow-up script library\n• a working Prospect Tracker spreadsheet\n\nNo guaranteed clients and no hype. A structured routine you can run, measure and improve.\n\n$47 USD, one-time. Instant download."
+          ],
+          "headline": [
+            "Client acquisition system for video editors"
+          ],
+          "description": [
+            "$47 one-time · 10 workbooks + tracker"
+          ],
+          "call_to_action": [
+            "LEARN_MORE"
+          ],
+          "link": [
+            "https://lumigoods.gumroad.com/l/client-machine?utm_campaign=cm-validation&utm_content=problem&utm_medium=paid&utm_source=meta"
+          ]
+        }
+      },
+      "media": [
+        {
+          "kind": "video",
+          "meta_id": "1074550711865392",
+          "uploaded_file_name": "CM_Ad1_Problem_FINAL_9x16.mp4",
+          "backup_file": null,
+          "backup_file_stem": "assets/creative_backup/CM_Ad1_Problem_FINAL_9x16",
+          "length_seconds": 21,
+          "aspect_ratio": "9x16",
+          "library_video_id": "38763907433257021",
+          "placements": {
+            "positions": {
+              "facebook_positions": [
+                "story",
+                "facebook_reels"
+              ],
+              "instagram_positions": [
+                "story",
+                "reels"
+              ]
+            },
+            "vertical": true
+          },
+          "match_basis": "library file named for 'Ad1 · Problem' and 9x16, from this video's placement rule"
+        },
+        {
+          "kind": "video",
+          "meta_id": "1416097756629894",
+          "uploaded_file_name": "CM_Ad1_Problem_FINAL_4x5.mp4",
+          "backup_file": null,
+          "backup_file_stem": "assets/creative_backup/CM_Ad1_Problem_FINAL_4x5",
+          "length_seconds": 21,
+          "aspect_ratio": "4x5",
+          "library_video_id": "1078998121704077",
+          "placements": {
+            "positions": "all other placements",
+            "vertical": false
+          },
+          "match_basis": "library file named for 'Ad1 · Problem' and 4x5, from this video's placement rule"
+        }
+      ],
+      "notes": [
+        "copy and media taken from original creative 4534143046849861 (the ad now uses 2012388152782644, which only references the post)"
+      ]
+    },
+    {
+      "name": "Ad2 · Workflow",
+      "ad_id": "120249370896330192",
+      "created_time": "2026-10-06T20:55:52+0800",
+      "status": "PAUSED",
+      "adset_id": "120249369863160192",
+      "tracking_specs": [
+        {
+          "action.type": [
+            "onsite_conversion"
+          ],
+          "conversion_id": [
+            "28804984619118579"
+          ]
+        },
+        {
+          "action.type": [
+            "offsite_conversion"
+          ],
+          "fb_pixel": [
+            "2239569883568957"
+          ]
+        },
+        {
+          "action.type": [
+            "onsite_conversion"
+          ]
+        },
+        {
+          "action.type": [
+            "onsite_conversion"
+          ],
+          "conversion_id": [
+            "28497571209894715",
+            "28534827709516793",
+            "28765832776384489",
+            "29041226572169482",
+            "29157060550544281",
+            "29456938620567458",
+            "29473630698906474",
+            "29859934460261160",
+            "39150420467904780",
+            "39336791339267681",
+            "39412126185067470"
+          ]
+        },
+        {
+          "action.type": [
+            "post_interaction_gross"
+          ],
+          "page": [
+            "1423896704133180"
+          ],
+          "post": [
+            "122105266917495917"
+          ]
+        },
+        {
+          "action.type": [
+            "link_click"
+          ],
+          "post": [
+            "122105266917495917"
+          ],
+          "post.wall": [
+            "1423896704133180"
+          ]
+        },
+        {
+          "action.type": [
+            "post_engagement"
+          ],
+          "page": [
+            "1423896704133180"
+          ],
+          "post": [
+            "122105266917495917"
+          ]
+        }
+      ],
+      "conversion_domain": null,
+      "creative": {
+        "creative_id": "949075014454096",
+        "name": "The 10-step client workflow for editors 2026-10-06-07757da4a7cc05b8e947b44771375b52",
+        "object_type": "SHARE",
+        "source_creative_id": "949075014454096",
+        "source_creative_name": "The 10-step client workflow for editors 2026-10-06-07757da4a7cc05b8e947b44771375b52",
+        "object_story_id": "1423896704133180_122105266917495917",
+        "instagram_user_id": "17841426270756679",
+        "object_story_spec": {
+          "page_id": "1423896704133180",
+          "instagram_user_id": "17841426270756679"
+        },
+        "asset_feed_spec": {
+          "videos": [
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_fa8ab9a511c463931",
+                  "id": "120249370944490192"
+                },
+                {
+                  "name": "placement_asset_fd5600f81b24ec245",
+                  "id": "120249370944500192"
+                }
+              ],
+              "video_id": "28540853032210523",
+              "thumbnail_url": "https://scontent.fkul16-2.fna.fbcdn.net/v/t15.5256-10/839498724_1483627850579495_6756342552173090717_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=uMp78akZLuMQ7kNvwH-rX9f&_nc_oc=Ados6ttz_Q1vhnan3kt-OOjodfC4jLpOe2BsU2sbku2FUFAQkmRECElAfcSJLR-5vlc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fkul16-2.fna&_nc_gid=qIGWj4RMCIbFLc0jKhrWeA&_nc_ss=7a22e&oh=00_AQPbPLGrZ_5MFzTlzgKGWSWCdhoqIYq8AD_LkcEkCMM9iw&oe=6ACAB573"
+            },
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_f6a4514f050779ce2",
+                  "id": "120249370944440192"
+                }
+              ],
+              "video_id": "1646347997141256",
+              "thumbnail_url": "https://scontent.fkul16-4.fna.fbcdn.net/v/t15.5256-10/818563299_28509352718745707_6263419224933211324_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=Jj6Db9KDnjIQ7kNvwEe9YMy&_nc_oc=Adq-9ZFWybw3PUpovoOvcdaL3VKCOi8g9zRutuveS0NDv_bVhXXmVEPoe39DIoCuisA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fkul16-4.fna&_nc_gid=qIGWj4RMCIbFLc0jKhrWeA&_nc_ss=7a22e&oh=00_AQPFp6zv-c2MTvbkU9ou0S7ULhOJCQXQLTIys_jxFE5CEQ&oe=6ACADB01"
+            }
+          ],
+          "bodies": [
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_f94777f6105aa6260",
+                  "id": "120249370944470192"
+                },
+                {
+                  "name": "placement_asset_f2b02b2fdf6c5d352",
+                  "id": "120249370944520192"
+                }
+              ],
+              "text": "Beginner video editors: getting clients isn't one skill. It's a sequence.\n\nOffer → price → proof → prospects → outreach → follow-up → conversation → proposal → onboarding → delivery.\n\nIt's easy to jump straight to cold DMs and skip the offer and the follow-up. CLIENT MACHINE gives each step a worksheet, script, checklist or tracker, plus a 30-day plan that sets out what to do each day.\n\nIt won't contact anyone for you, and it can't promise results. It gives you a process you can repeat.\n\n$47 USD, one-time."
+            }
+          ],
+          "call_to_action_types": [
+            "LEARN_MORE"
+          ],
+          "descriptions": [
+            {
+              "text": "30-day plan · scripts · tracker"
+            }
+          ],
+          "link_urls": [
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_fe5d24f51b039836a",
+                  "id": "120249370944450192"
+                },
+                {
+                  "name": "placement_asset_f24089b192983c5db",
+                  "id": "120249370944480192"
+                }
+              ],
+              "website_url": "https://lumigoods.gumroad.com/l/client-machine?utm_campaign=cm-validation&utm_content=workflow&utm_medium=paid&utm_source=meta",
+              "display_url": ""
+            }
+          ],
+          "titles": [
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_f5f879f31a9517df8",
+                  "id": "120249370944460192"
+                },
+                {
+                  "name": "placement_asset_f7020cfed510e6a9c",
+                  "id": "120249370944510192"
+                }
+              ],
+              "text": "The 10-step client workflow for editors"
+            }
+          ],
+          "ad_formats": [
+            "AUTOMATIC_FORMAT"
+          ],
+          "asset_customization_rules": [
+            {
+              "customization_spec": {
+                "age_max": 65,
+                "age_min": 13,
+                "publisher_platforms": [
+                  "facebook",
+                  "instagram"
+                ],
+                "facebook_positions": [
+                  "story",
+                  "facebook_reels"
+                ],
+                "instagram_positions": [
+                  "story",
+                  "reels"
+                ]
+              },
+              "video_label": {
+                "name": "placement_asset_fd5600f81b24ec245",
+                "id": "120249370944500192"
+              },
+              "body_label": {
+                "name": "placement_asset_f94777f6105aa6260",
+                "id": "120249370944470192"
+              },
+              "link_url_label": {
+                "name": "placement_asset_f24089b192983c5db",
+                "id": "120249370944480192"
+              },
+              "title_label": {
+                "name": "placement_asset_f7020cfed510e6a9c",
+                "id": "120249370944510192"
+              },
+              "priority": 1
+            },
+            {
+              "customization_spec": {
+                "age_max": 65,
+                "age_min": 13
+              },
+              "video_label": {
+                "name": "placement_asset_f6a4514f050779ce2",
+                "id": "120249370944440192"
+              },
+              "body_label": {
+                "name": "placement_asset_f2b02b2fdf6c5d352",
+                "id": "120249370944520192"
+              },
+              "link_url_label": {
+                "name": "placement_asset_fe5d24f51b039836a",
+                "id": "120249370944450192"
+              },
+              "title_label": {
+                "name": "placement_asset_f5f879f31a9517df8",
+                "id": "120249370944460192"
+              },
+              "priority": 2
+            }
+          ],
+          "optimization_type": "PLACEMENT",
+          "additional_data": {
+            "multi_share_end_card": false,
+            "is_click_to_message": false
+          },
+          "reasons_to_shop": false,
+          "shops_bundle": false
+        },
+        "url_tags": null,
+        "copy": {
+          "primary_text": [
+            "Beginner video editors: getting clients isn't one skill. It's a sequence.\n\nOffer → price → proof → prospects → outreach → follow-up → conversation → proposal → onboarding → delivery.\n\nIt's easy to jump straight to cold DMs and skip the offer and the follow-up. CLIENT MACHINE gives each step a worksheet, script, checklist or tracker, plus a 30-day plan that sets out what to do each day.\n\nIt won't contact anyone for you, and it can't promise results. It gives you a process you can repeat.\n\n$47 USD, one-time."
+          ],
+          "headline": [
+            "The 10-step client workflow for editors"
+          ],
+          "description": [
+            "30-day plan · scripts · tracker"
+          ],
+          "call_to_action": [
+            "LEARN_MORE"
+          ],
+          "link": [
+            "https://lumigoods.gumroad.com/l/client-machine?utm_campaign=cm-validation&utm_content=workflow&utm_medium=paid&utm_source=meta"
+          ]
+        }
+      },
+      "media": [
+        {
+          "kind": "video",
+          "meta_id": "1646347997141256",
+          "uploaded_file_name": "CM_Ad2_Workflow_FINAL_4x5.mp4",
+          "backup_file": null,
+          "backup_file_stem": "assets/creative_backup/CM_Ad2_Workflow_FINAL_4x5",
+          "length_seconds": 22.6,
+          "aspect_ratio": "4x5",
+          "library_video_id": "1825175591821048",
+          "placements": {
+            "positions": "all other placements",
+            "vertical": false
+          },
+          "match_basis": "library file named for 'Ad2 · Workflow' and 4x5, from this video's placement rule"
+        },
+        {
+          "kind": "video",
+          "meta_id": "28540853032210523",
+          "uploaded_file_name": "CM_Ad2_Workflow_FINAL_9x16.mp4",
+          "backup_file": null,
+          "backup_file_stem": "assets/creative_backup/CM_Ad2_Workflow_FINAL_9x16",
+          "length_seconds": 22.6,
+          "aspect_ratio": "9x16",
+          "library_video_id": "975374108937590",
+          "placements": {
+            "positions": {
+              "facebook_positions": [
+                "story",
+                "facebook_reels"
+              ],
+              "instagram_positions": [
+                "story",
+                "reels"
+              ]
+            },
+            "vertical": true
+          },
+          "match_basis": "library file named for 'Ad2 · Workflow' and 9x16, from this video's placement rule"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "name": "Ad3 · Demo",
+      "ad_id": "120249370958700192",
+      "created_time": "2026-10-06T20:55:52+0800",
+      "status": "PAUSED",
+      "adset_id": "120249369863160192",
+      "tracking_specs": [
+        {
+          "action.type": [
+            "onsite_conversion"
+          ],
+          "conversion_id": [
+            "28804984619118579"
+          ]
+        },
+        {
+          "action.type": [
+            "link_click"
+          ],
+          "post": [
+            "122105266935495917"
+          ],
+          "post.wall": [
+            "1423896704133180"
+          ]
+        },
+        {
+          "action.type": [
+            "post_interaction_gross"
+          ],
+          "page": [
+            "1423896704133180"
+          ],
+          "post": [
+            "122105266935495917"
+          ]
+        },
+        {
+          "action.type": [
+            "offsite_conversion"
+          ],
+          "fb_pixel": [
+            "2239569883568957"
+          ]
+        },
+        {
+          "action.type": [
+            "onsite_conversion"
+          ]
+        },
+        {
+          "action.type": [
+            "post_engagement"
+          ],
+          "page": [
+            "1423896704133180"
+          ],
+          "post": [
+            "122105266935495917"
+          ]
+        },
+        {
+          "action.type": [
+            "onsite_conversion"
+          ],
+          "conversion_id": [
+            "28497571209894715",
+            "28534827709516793",
+            "28765832776384489",
+            "29041226572169482",
+            "29157060550544281",
+            "29456938620567458",
+            "29473630698906474",
+            "29859934460261160",
+            "39150420467904780",
+            "39336791339267681",
+            "39412126185067470"
+          ]
+        }
+      ],
+      "conversion_domain": null,
+      "creative": {
+        "creative_id": "1135370795513214",
+        "name": "See what's inside CLIENT MACHINE 2026-10-06-9b8aade589865be5b09cbcf56950c430",
+        "object_type": "SHARE",
+        "source_creative_id": "1135370795513214",
+        "source_creative_name": "See what's inside CLIENT MACHINE 2026-10-06-9b8aade589865be5b09cbcf56950c430",
+        "object_story_id": "1423896704133180_122105266935495917",
+        "instagram_user_id": "17841426270756679",
+        "object_story_spec": {
+          "page_id": "1423896704133180",
+          "instagram_user_id": "17841426270756679"
+        },
+        "asset_feed_spec": {
+          "videos": [
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_fcebb0b775f69fbe0",
+                  "id": "120249371033290192"
+                }
+              ],
+              "video_id": "1982240102734737",
+              "thumbnail_url": "https://scontent.fkul16-3.fna.fbcdn.net/v/t15.5256-10/837040549_1412695984370758_5997457459965255170_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=TWPBRriactsQ7kNvwGJjJg2&_nc_oc=AdqVX2YeeRdrhKaFThwvZ_BpqNX06O8wmeEyFYdbRq7eWcvgEJ7aSQ_EjMbqK9Ca8lA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fkul16-3.fna&_nc_gid=qIGWj4RMCIbFLc0jKhrWeA&_nc_ss=7a22e&oh=00_AQNESClFD1r61TiWM5ZW3ZqFo4Z8mAHyYYL4kcSd6gMrJQ&oe=6ACAC6B4"
+            },
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_f7a6973d20605101e",
+                  "id": "120249371033280192"
+                },
+                {
+                  "name": "placement_asset_f196c0a4031975cca",
+                  "id": "120249371033330192"
+                }
+              ],
+              "video_id": "2536756630126896",
+              "thumbnail_url": "https://scontent.fkul16-4.fna.fbcdn.net/v/t15.5256-10/838561937_1858468135172041_7137281859224332445_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=YYnfiio12aUQ7kNvwFDwi5W&_nc_oc=AdovwPRH5fl_Qmt1wMrPDl5gI0U9kicQe1eRsAYMPlXsoRN9VCSkau6XKMZSM5_YC-A&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fkul16-4.fna&_nc_gid=qIGWj4RMCIbFLc0jKhrWeA&_nc_ss=7a22e&oh=00_AQOJtJGziiI09bT1rXe9OWojbCxIuFmDNByRHOtDUy9K9w&oe=6ACADA93"
+            }
+          ],
+          "bodies": [
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_f1c92831b0382dde0",
+                  "id": "120249371033320192"
+                },
+                {
+                  "name": "placement_asset_f53c9718fc1f0292f",
+                  "id": "120249371033350192"
+                }
+              ],
+              "text": "A look inside CLIENT MACHINE, the 30-day client acquisition system for beginner video editors.\n\nWhat you get, in one ZIP:\n• Start Here Guide + 30-Day Client Acquisition Plan\n• Offer Builder, Portfolio Builder, Pricing System\n• Outreach Script Library\n• Sales System, Proposal Kit, Client Onboarding Kit, Delivery & Retention\n• Prospect Tracker spreadsheet (.xlsx) with a Dashboard and Follow-Up Queue\n• 2 editable Canva templates (free Canva account needed)\n\nSome modules include AI drafting workflows. AI writes a draft; you check it and decide.\n\n$47 USD, one-time."
+            }
+          ],
+          "call_to_action_types": [
+            "LEARN_MORE"
+          ],
+          "descriptions": [
+            {
+              "text": "10 PDFs · 192 pages · tracker"
+            }
+          ],
+          "link_urls": [
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_ff216727dcfca1c57",
+                  "id": "120249371033300192"
+                },
+                {
+                  "name": "placement_asset_fe2109995bcbe97e5",
+                  "id": "120249371033310192"
+                }
+              ],
+              "website_url": "https://lumigoods.gumroad.com/l/client-machine?utm_campaign=cm-validation&utm_content=demo&utm_medium=paid&utm_source=meta",
+              "display_url": ""
+            }
+          ],
+          "titles": [
+            {
+              "adlabels": [
+                {
+                  "name": "placement_asset_f7146d5b55d7c2e93",
+                  "id": "120249371033340192"
+                },
+                {
+                  "name": "placement_asset_fe412b95f3095e282",
+                  "id": "120249371033360192"
+                }
+              ],
+              "text": "See what's inside CLIENT MACHINE"
+            }
+          ],
+          "ad_formats": [
+            "AUTOMATIC_FORMAT"
+          ],
+          "asset_customization_rules": [
+            {
+              "customization_spec": {
+                "age_max": 65,
+                "age_min": 13,
+                "publisher_platforms": [
+                  "facebook",
+                  "instagram"
+                ],
+                "facebook_positions": [
+                  "story",
+                  "facebook_reels"
+                ],
+                "instagram_positions": [
+                  "story",
+                  "reels"
+                ]
+              },
+              "video_label": {
+                "name": "placement_asset_f196c0a4031975cca",
+                "id": "120249371033330192"
+              },
+              "body_label": {
+                "name": "placement_asset_f53c9718fc1f0292f",
+                "id": "120249371033350192"
+              },
+              "link_url_label": {
+                "name": "placement_asset_fe2109995bcbe97e5",
+                "id": "120249371033310192"
+              },
+              "title_label": {
+                "name": "placement_asset_fe412b95f3095e282",
+                "id": "120249371033360192"
+              },
+              "priority": 1
+            },
+            {
+              "customization_spec": {
+                "age_max": 65,
+                "age_min": 13
+              },
+              "video_label": {
+                "name": "placement_asset_fcebb0b775f69fbe0",
+                "id": "120249371033290192"
+              },
+              "body_label": {
+                "name": "placement_asset_f1c92831b0382dde0",
+                "id": "120249371033320192"
+              },
+              "link_url_label": {
+                "name": "placement_asset_ff216727dcfca1c57",
+                "id": "120249371033300192"
+              },
+              "title_label": {
+                "name": "placement_asset_f7146d5b55d7c2e93",
+                "id": "120249371033340192"
+              },
+              "priority": 2
+            }
+          ],
+          "optimization_type": "PLACEMENT",
+          "additional_data": {
+            "multi_share_end_card": false,
+            "is_click_to_message": false
+          },
+          "reasons_to_shop": false,
+          "shops_bundle": false
+        },
+        "url_tags": null,
+        "copy": {
+          "primary_text": [
+            "A look inside CLIENT MACHINE, the 30-day client acquisition system for beginner video editors.\n\nWhat you get, in one ZIP:\n• Start Here Guide + 30-Day Client Acquisition Plan\n• Offer Builder, Portfolio Builder, Pricing System\n• Outreach Script Library\n• Sales System, Proposal Kit, Client Onboarding Kit, Delivery & Retention\n• Prospect Tracker spreadsheet (.xlsx) with a Dashboard and Follow-Up Queue\n• 2 editable Canva templates (free Canva account needed)\n\nSome modules include AI drafting workflows. AI writes a draft; you check it and decide.\n\n$47 USD, one-time."
+          ],
+          "headline": [
+            "See what's inside CLIENT MACHINE"
+          ],
+          "description": [
+            "10 PDFs · 192 pages · tracker"
+          ],
+          "call_to_action": [
+            "LEARN_MORE"
+          ],
+          "link": [
+            "https://lumigoods.gumroad.com/l/client-machine?utm_campaign=cm-validation&utm_content=demo&utm_medium=paid&utm_source=meta"
+          ]
+        }
+      },
+      "media": [
+        {
+          "kind": "video",
+          "meta_id": "1982240102734737",
+          "uploaded_file_name": "CM_Ad3_Demo_FINAL_4x5.mp4",
+          "backup_file": null,
+          "backup_file_stem": "assets/creative_backup/CM_Ad3_Demo_FINAL_4x5",
+          "length_seconds": 23.4,
+          "aspect_ratio": "4x5",
+          "library_video_id": "1965069917521341",
+          "placements": {
+            "positions": "all other placements",
+            "vertical": false
+          },
+          "match_basis": "library file named for 'Ad3 · Demo' and 4x5, from this video's placement rule"
+        },
+        {
+          "kind": "video",
+          "meta_id": "2536756630126896",
+          "uploaded_file_name": "CM_Ad3_Demo_FINAL_9x16.mp4",
+          "backup_file": null,
+          "backup_file_stem": "assets/creative_backup/CM_Ad3_Demo_FINAL_9x16",
+          "length_seconds": 23.4,
+          "aspect_ratio": "9x16",
+          "library_video_id": "1565261374911553",
+          "placements": {
+            "positions": {
+              "facebook_positions": [
+                "story",
+                "facebook_reels"
+              ],
+              "instagram_positions": [
+                "story",
+                "reels"
+              ]
+            },
+            "vertical": true
+          },
+          "match_basis": "library file named for 'Ad3 · Demo' and 9x16, from this video's placement rule"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "recreate_hint": "Re-use creative.object_story_id to run the same post (keeps likes and comments); otherwise rebuild from object_story_spec, uploading each media backup_file and swapping in the new image hash or video ID."
+}

@@ -40,6 +40,7 @@ CREATIVE_FIELDS = ",".join([
     "id", "name", "body", "title", "link_url", "call_to_action_type",
     "image_url", "image_hash", "thumbnail_url", "video_id", "object_type",
     "object_story_spec", "asset_feed_spec", "effective_object_story_id",
+    "url_tags", "instagram_user_id",
 ])
 
 
@@ -129,7 +130,79 @@ def copy_from_post(post_id, copy, notes):
     return media_urls
 
 
-def media_for(creative, account_id, notes):
+_cache = {}
+
+
+def _account_list(account_id, edge, fields):
+    key = (account_id, edge)
+    if key not in _cache:
+        rows, params = [], {"fields": fields, "limit": 100}
+        path = f"{account_id}/{edge}"
+        while True:
+            body = get(path, **params)
+            rows += body.get("data", [])
+            after = body.get("paging", {}).get("cursors", {}).get("after")
+            if not body.get("paging", {}).get("next") or not after:
+                break
+            params["after"] = after
+        _cache[key] = rows
+    return _cache[key]
+
+
+def source_creative(account_id, creative, notes):
+    """The creative that holds the ad's copy and media.
+
+    A creative built only from a post reference (e.g. the Facebook Page identity
+    creatives) carries no copy or media; the original creative for the same
+    post does, so use that.
+    """
+    def rich(c):
+        spec = c.get("object_story_spec") or {}
+        return bool(c.get("asset_feed_spec") or spec.get("link_data") or spec.get("video_data"))
+
+    if rich(creative) or not creative.get("effective_object_story_id"):
+        return creative
+    try:
+        for c in _account_list(account_id, "adcreatives", CREATIVE_FIELDS):
+            if (c.get("effective_object_story_id") == creative["effective_object_story_id"]
+                    and c["id"] != creative["id"] and rich(c)):
+                notes.append(f"copy and media taken from original creative {c['id']} "
+                             f"(the ad now uses {creative['id']}, which only references the post)")
+                return c
+    except GraphError as exc:
+        notes.append(f"could not look up the original creative: {exc}")
+    return creative
+
+
+def video_placements(feed):
+    """Map video ID -> {positions, vertical} from the asset feed's placement rules."""
+    by_label = {l["id"]: v["video_id"] for v in feed.get("videos", []) for l in v.get("adlabels", [])}
+    out = {}
+    for rule in sorted(feed.get("asset_customization_rules", []), key=lambda r: r.get("priority", 0)):
+        vid = by_label.get((rule.get("video_label") or {}).get("id"))
+        if not vid or vid in out:
+            continue
+        cs = rule.get("customization_spec", {})
+        positions = {k: v for k, v in cs.items() if k.endswith("_positions")}
+        flat = [p for v in positions.values() for p in v]
+        out[vid] = {"positions": positions or "all other placements",
+                    "vertical": bool(flat) and all(p in ("story", "reels", "facebook_reels") for p in flat)}
+    return out
+
+
+def library_match(account_id, ad_name, aspect):
+    """The ad account library video named for this ad and aspect ratio, preferring the plain upload."""
+    want = slug(ad_name)
+    try:
+        videos = _account_list(account_id, "advideos", "id,title,length,source,picture")
+    except GraphError:
+        return None
+    hits = [v for v in videos if want in slug(v.get("title") or "") and aspect in (v.get("title") or "")]
+    hits.sort(key=lambda v: ("auto_cropped" in (v.get("title") or "").lower(), v.get("title")))
+    return hits[0] if hits else None
+
+
+def media_for(creative, account_id, notes, ad_name=""):
     """Return [{kind, id, url, name, ...}] for the creative's images and videos.
 
     `name` is the file name the media was uploaded with (images) or the video
@@ -159,13 +232,30 @@ def media_for(creative, account_id, notes):
     videos = {creative.get("video_id"), (spec.get("video_data") or {}).get("video_id")}
     videos.update(v.get("video_id") for v in feed.get("videos", []))
     videos.discard(None)
+    placements = video_placements(feed)
     for vid in sorted(videos):
         try:
             v = get(vid, fields="source,title,length,picture")
             media.append({"kind": "video", "id": vid, "name": v.get("title"), "url": v["source"],
-                          "length_seconds": v.get("length"), "thumbnail_url": v.get("picture")})
-        except (GraphError, KeyError) as exc:
-            notes.append(f"could not get a download link for video {vid}: {exc}")
+                          "length_seconds": v.get("length"), "thumbnail_url": v.get("picture"),
+                          "placements": placements.get(vid), "match_basis": "video ID"})
+            continue
+        except (GraphError, KeyError):
+            pass
+        # The creative points at a Page-owned copy this token can't read; find the
+        # uploaded original in the ad account's library instead.
+        aspect = "9x16" if placements.get(vid, {}).get("vertical") else "4x5"
+        match = library_match(account_id, ad_name, aspect)
+        if match:
+            media.append({"kind": "video", "id": vid, "name": match.get("title"),
+                          "url": match.get("source"), "length_seconds": match.get("length"),
+                          "thumbnail_url": match.get("picture"), "library_video_id": match["id"],
+                          "aspect_ratio": aspect, "placements": placements.get(vid),
+                          "match_basis": f"library file named for '{ad_name}' and {aspect}, "
+                                         f"from this video's placement rule"})
+        else:
+            notes.append(f"video {vid} ({aspect}): not readable and no library file matches "
+                         f"'{ad_name}' + {aspect}")
 
     if not media and creative.get("image_url"):
         media.append({"kind": "image", "id": creative["id"], "name": None,
@@ -174,7 +264,13 @@ def media_for(creative, account_id, notes):
 
 
 def backup_stem(out_dir, ad_name, item):
-    """The path (without extension) a media item is backed up to."""
+    """The path (without extension) a media item is backed up to.
+
+    Uses the file name it was uploaded with when Meta has one, else
+    <ad>_<kind>_<id>.
+    """
+    if item.get("name") and os.path.splitext(item["name"])[1]:
+        return os.path.join(out_dir, os.path.splitext(os.path.basename(item["name"]))[0])
     return os.path.join(out_dir, f"{slug(ad_name)}_{item['kind']}_{item['id']}")
 
 
@@ -233,8 +329,9 @@ def main():
         seen_posts[post_id] = f"ad {ad['id']}"
 
         notes = []
-        copy = collect_copy(creative)
-        media = media_for(creative, account_id, notes)
+        src = source_creative(account_id, creative, notes)
+        copy = collect_copy(src)
+        media = media_for(src, account_id, notes, ad["name"])
         if creative.get("effective_object_story_id") and (not copy["primary_text"] or not media):
             post_media = copy_from_post(creative["effective_object_story_id"], copy, notes)
             if not media:
