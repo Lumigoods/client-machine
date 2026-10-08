@@ -2,9 +2,11 @@
 
 ## ad_monitor.py
 
-Pulls metrics for the **active** Meta (Facebook/Instagram) ad campaigns in the
-`CM` project and prints Spend, Impressions, Clicks and CTR per campaign,
-plus a total row.
+Pulls ad-level metrics for the **active** Meta (Facebook/Instagram) ad
+campaigns in the `CM` project. For each ad in those campaigns it prints the
+status, effective status, Spend, Clicks and CTR, plus a total row per campaign.
+Below the table it lists any delivery issues or review feedback Meta reports,
+and any active ad that got no impressions in the period.
 
 A campaign counts as part of the project when its name contains `CM`
 (case-insensitive).
@@ -48,13 +50,18 @@ python ad_monitor.py --keyword other-project
 Example output:
 
 ```
-Active 'CM' campaigns in act_1234567890 (last_7d)
+Ads in active 'CM' campaigns in act_1234567890 (last_7d)
 
-Campaign                                        Spend  Impressions   Clicks   CTR %
------------------------------------------------------------------------------------
-CM · Spring Launch                             152.40       48,210      913    1.89
------------------------------------------------------------------------------------
-TOTAL                                          152.40       48,210      913    1.89
+Campaign: CM · Spring Launch (120200000000000000)
+Ad                             Status   Effective status        Spend  Clicks   CTR %
+-------------------------------------------------------------------------------------
+Ad1 · Problem                  ACTIVE   ACTIVE                 152.40     913    1.89
+Ad2 · Demo                     ACTIVE   ACTIVE                   0.00       0    0.00
+-------------------------------------------------------------------------------------
+TOTAL                                                          152.40     913    1.89
+
+Issues:
+  - Ad2 · Demo: active but has no impressions in this period
 ```
 
 Spend is shown in the ad account's currency.
