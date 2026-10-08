@@ -103,17 +103,30 @@ def main():
               and t["age_max"] == 44 and len(interests) == 6)
         report("PASS" if ok else "FAIL", "targeting US, 18-44, 6 interests",
                f"{t['geo_locations'].get('countries')}, {t['age_min']}-{t['age_max']}, {len(interests)} interests")
-        report("CHECK" if t.get("publisher_platforms") == ["facebook"] else "PASS", "placements",
-               f"{t.get('publisher_platforms')} {t.get('facebook_positions')} {t.get('instagram_positions', '')}")
+        other = [k for k in ("instagram_positions", "audience_network_positions", "messenger_positions",
+                             "threads_positions", "whatsapp_positions") if t.get(k)]
+        ok = (t.get("publisher_platforms") == ["facebook"] and not other
+              and sorted(t.get("facebook_positions", [])) == ["facebook_reels", "feed", "story"])
+        report("PASS" if ok else "FAIL", "placements Facebook only: Feed, Stories, Reels",
+               f"{t.get('publisher_platforms')} {t.get('facebook_positions')}" + (f" + {other}" if other else ""))
 
         for ratio, adinfo in info["ads"].items():
-            ad = get(adinfo["ad_id"], fields="name,status,effective_status,tracking_specs,creative")
-            cr = get(ad["creative"]["id"], fields="name,object_story_spec,instagram_user_id,"
+            ad = get(adinfo["ad_id"], fields="name,status,effective_status,tracking_specs,creative,"
+                                             "ad_review_feedback")
+            cr = get(ad["creative"]["id"], fields="name,object_story_spec,instagram_user_id,actor_id,"
                                                   "effective_instagram_media_id,url_tags")
             vd = cr.get("object_story_spec", {}).get("video_data", {})
             label = f"{ad['name']}"
             report("PASS" if ad["status"] == "PAUSED" else "FAIL", f"{label}: paused",
                    f"{ad['status']}/{ad['effective_status']}")
+            fb = ad.get("ad_review_feedback")
+            review = {"IN_PROCESS": ("CHECK", "Meta review still in progress"),
+                      "DISAPPROVED": ("FAIL", f"disapproved: {fb}"),
+                      "WITH_ISSUES": ("FAIL", f"issues: {fb}")}.get(ad["effective_status"])
+            report(*(review or ("FAIL" if fb else "PASS", f"{label}: Meta review",
+                                f"feedback: {fb}" if fb else "no rejection or feedback")))
+            if review:
+                print(f"       ({label})")
             # video mapping
             vid = vd.get("video_id")
             fname, mv = music_by_video.get(vid, (None, None))
@@ -146,9 +159,12 @@ def main():
             pixels = [p for s_ in ad.get("tracking_specs", []) for p in s_.get("fb_pixel", [])]
             report("PASS" if PIXEL_ID in pixels else "FAIL", f"{label}: tracks pixel {PIXEL_ID}")
             page = cr.get("object_story_spec", {}).get("page_id")
-            report("PASS" if page == PAGE_ID else "FAIL", f"{label}: Facebook identity", f"Page {page}")
+            ok = page == PAGE_ID and cr.get("actor_id") in (None, PAGE_ID)
+            report("PASS" if ok else "FAIL", f"{label}: Facebook Page identity",
+                   f"Page {page}, posts as {cr.get('actor_id')}")
             ig = cr.get("instagram_user_id") or cr.get("object_story_spec", {}).get("instagram_user_id")
-            report("CHECK", f"{label}: Instagram identity", ig or "none (Instagram not connected yet)")
+            report("PASS" if not ig else "FAIL", f"{label}: no Instagram account attached",
+                   ig or "Facebook-only, as intended")
 
     print("\n== Music")
     for wav in sorted((ROOT / "assets/music").glob("*_music.wav")):
