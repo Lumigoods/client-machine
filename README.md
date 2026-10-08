@@ -68,3 +68,33 @@ Spend is shown in the ad account's currency.
 
 The script calls Graph API `v23.0` by default. To use a different version, set
 `META_API_VERSION`, for example `export META_API_VERSION=v24.0`.
+
+## restructure_campaign.py
+
+Splits a campaign's ads into one ad set each so they stop competing for budget,
+sets the countries, divides a combined daily budget evenly, and puts every
+running ad on the Facebook Page identity (no Instagram account needed). Needs a
+token with `ads_management`. Dry run by default:
+
+```bash
+python restructure_campaign.py                       # show the plan
+python restructure_campaign.py --apply               # make the changes
+python restructure_campaign.py --countries US --total-daily-budget 20 --apply
+```
+
+It is safe to re-run after a partial failure; it reuses what it already made.
+
+## daily_report.py
+
+Daily ad spend vs. Gumroad sales for the USD 47 product: spend, clicks,
+landing page views, sales, revenue, cost per sale and ROAS per day, a per-ad
+breakdown, and the break-even cost per sale after Gumroad's fees.
+
+```bash
+export GUMROAD_ACCESS_TOKEN="your-gumroad-token"   # optional
+export GUMROAD_PRODUCT_ID="your-product-id"        # optional
+python daily_report.py --days 7 --myr-per-usd 4.20
+```
+
+Update `--myr-per-usd` to the current exchange rate. Without a Gumroad token
+the report shows the Meta side only.
