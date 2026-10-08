@@ -37,6 +37,47 @@
       "thumbnail_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t15.5256-10/840565206_1820668739292329_3270626164501207706_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=e3495b&_nc_eui2=AeFh78JPqtpHleUVzLA5OTLwqwZsr-zs5MGrBmyv7OzkwffbyEmO-FIBAy47DQ0FUKg&_nc_ohc=iWNVh0h87tEQ7kNvwGghpZ5&_nc_oc=Adr1FFSiMRDkiKoUXBYzkVAu9b0iRn4CkGgEYVfEzJHOljVHou4NZY0ix7F-BR27E14&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AF0wKlEEAAAA&_nc_gid=bIFtJfeOHYQKLS6txEig7Q&_nc_tpa=Q5bMBQLLjnN8ddZGHUydqBRZSbAzQoCCg5NosBhKk7ZqpOfAtqqjE-bHNhgbkPgeMLPfRRDN9chNYwzVtg&oh=00_AQPbnWNl6XqKeGUEsHNJJsBfkcyDDB1Mj0OV2rcrySrbBg&oe=6ACD2BC0"
     }
   },
-  "ads": {},
-  "campaign_id": "120249405165590192"
+  "campaign_id": "120249405165590192",
+  "built_with": "MetaAds connector (one video per ad; Facebook placements only, no Instagram account)",
+  "ad_sets": {
+    "Ad1 · Problem": {
+      "adset_id": "120249405393480192",
+      "ads": {
+        "9x16": {
+          "ad_id": "120249405426070192",
+          "creative_id": "2117601525810509"
+        },
+        "4x5": {
+          "ad_id": "120249405427680192",
+          "creative_id": "1092648250157576"
+        }
+      }
+    },
+    "Ad2 · Workflow": {
+      "adset_id": "120249405409300192",
+      "ads": {
+        "9x16": {
+          "ad_id": "120249405429010192",
+          "creative_id": "1089425390526985"
+        },
+        "4x5": {
+          "ad_id": "120249405430140192",
+          "creative_id": "4445275159017800"
+        }
+      }
+    },
+    "Ad3 · Demo": {
+      "adset_id": "120249405410010192",
+      "ads": {
+        "9x16": {
+          "ad_id": "120249405430940192",
+          "creative_id": "2469450700213334"
+        },
+        "4x5": {
+          "ad_id": "120249405432370192",
+          "creative_id": "1795788738410135"
+        }
+      }
+    }
+  }
 }
