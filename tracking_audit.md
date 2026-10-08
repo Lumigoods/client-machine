@@ -60,6 +60,32 @@ this data can't show whether the UTM parameters reached the page.
 - **No CAPI, and no duplicate Purchases**, because there are no Purchases at
   all.
 
+## Manual test results (2026-10-08, by the account owner)
+
+- **Events Manager → Test events** (window opened from Events Manager):
+  View content ×2, Initiate checkout and SubscribedButtonClick arrived from
+  `lumigoods.gumroad.com` in dataset `2239569883568957`, all Browser,
+  "Manual setup", status Processed, no duplicates. **Verified.**
+- **Purchase:** not seen during the test. **Still unverified.**
+- **UTM survival:** opening the Ad1 link in an incognito window kept the full
+  query string on the Gumroad product page
+  (`/l/client-machine?utm_campaign=cm-validation&utm_content=problem&utm_medium=paid&utm_source=meta`).
+  **Verified.** So Gumroad receives the `utm_content` that identifies each
+  ad (`problem`, `workflow`, `demo`).
+
+## Decision: split monitoring
+
+The owner chose to keep the two sides separate rather than reconcile them:
+
+- **Meta side (Claude):** spend, clicks, landing page views, Initiate
+  checkouts per ad, delivery issues.
+- **Sales side (owner):** Gumroad Analytics for sales and revenue, using the
+  `utm_content` breakdown for sales per ad.
+
+Purchase stays unverified on purpose. Meta's purchase and ROAS columns will
+read 0 even when there are sales, so don't use them. Gumroad is the source of
+truth for sales.
+
 ## Manual checks in Meta Events Manager / Gumroad
 
 1. Gumroad → Settings → Advanced: confirm the Meta Pixel ID is exactly
