@@ -2,24 +2,26 @@
 
 Everything for each post is in its own folder in `posts/`. Post the same files to both platforms, but use the matching caption file for each one. Nothing here has been uploaded, scheduled or published.
 
-**Times are a starting suggestion** (your main audience's local time, to be confirmed). Adjust once you see when your followers are active.
+**Times are Kuala Lumpur time (GMT+8).** Your ads target the **United States**, so every post goes out at **08:00 KL**, which is **8:00 pm the previous evening in New York (EDT) and 5:00 pm in Los Angeles (PDT)**, when US editors are scrolling after work. KL is 12 hours ahead of New York until US clocks change on 1 Nov.
 
-| Day | Date | Time | Format | Topic | Product | Folder |
+If most of your followers turn out to be in Malaysia or elsewhere in Asia, post at 20:00–21:00 KL instead. Check Instagram Insights → Audience after the first week.
+
+| Day | Date (KL) | Time (KL) | Format | Topic | Product | Folder |
 |---|---|---|---|---|---|---|
-| 1 | Mon 2026-10-12 | 12:00 | Carousel | getting clients is a sequence | — | `posts/01_2026-10-12_Mon_carousel_getting-clients-is-a-sequence/` |
-| 2 | Tue 2026-10-13 | 19:00 | Reel | stop asking do you need an editor | — | `posts/02_2026-10-13_Tue_reel_stop-asking-do-you-need-an-editor/` |
-| 3 | Wed 2026-10-14 | 12:00 | Single image | pick one target client | — | `posts/03_2026-10-14_Wed_image_pick-one-target-client/` |
-| 4 | Thu 2026-10-15 | 19:00 | Carousel | your offer in one sentence | — | `posts/04_2026-10-15_Thu_carousel_your-offer-in-one-sentence/` |
-| 5 | Fri 2026-10-16 | 12:00 | Reel | 60 second portfolio audit | — | `posts/05_2026-10-16_Fri_reel_60-second-portfolio-audit/` |
-| 6 | Sat 2026-10-17 | 10:00 | Carousel | build a prospect tracker | soft mention | `posts/06_2026-10-17_Sat_carousel_build-a-prospect-tracker/` |
-| 7 | Sun 2026-10-18 | 18:00 | Single image | which question are you stuck on | — | `posts/07_2026-10-18_Sun_image_which-question-are-you-stuck-on/` |
-| 8 | Mon 2026-10-19 | 12:00 | Carousel | 6 pricing mistakes | — | `posts/08_2026-10-19_Mon_carousel_6-pricing-mistakes/` |
-| 9 | Tue 2026-10-20 | 19:00 | Reel | follow up without being pushy | — | `posts/09_2026-10-20_Tue_reel_follow-up-without-being-pushy/` |
-| 10 | Wed 2026-10-21 | 12:00 | Single image | 6 numbers to check every friday | — | `posts/10_2026-10-21_Wed_image_6-numbers-to-check-every-friday/` |
-| 11 | Thu 2026-10-22 | 19:00 | Carousel | they said yes now what | soft mention | `posts/11_2026-10-22_Thu_carousel_they-said-yes-now-what/` |
-| 12 | Fri 2026-10-23 | 12:00 | Reel | ai drafts you decide | — | `posts/12_2026-10-23_Fri_reel_ai-drafts-you-decide/` |
-| 13 | Sat 2026-10-24 | 10:00 | Carousel | your foundation week | soft mention | `posts/13_2026-10-24_Sat_carousel_your-foundation-week/` |
-| 14 | Sun 2026-10-25 | 18:00 | Carousel | whats inside client machine | product post | `posts/14_2026-10-25_Sun_carousel_whats-inside-client-machine/` |
+| 1 | Mon 2026-10-12 | 08:00 | Carousel | getting clients is a sequence | — | `posts/01_2026-10-12_Mon_carousel_getting-clients-is-a-sequence/` |
+| 2 | Tue 2026-10-13 | 08:00 | Reel | stop asking do you need an editor | — | `posts/02_2026-10-13_Tue_reel_stop-asking-do-you-need-an-editor/` |
+| 3 | Wed 2026-10-14 | 08:00 | Single image | pick one target client | — | `posts/03_2026-10-14_Wed_image_pick-one-target-client/` |
+| 4 | Thu 2026-10-15 | 08:00 | Carousel | your offer in one sentence | — | `posts/04_2026-10-15_Thu_carousel_your-offer-in-one-sentence/` |
+| 5 | Fri 2026-10-16 | 08:00 | Reel | 60 second portfolio audit | — | `posts/05_2026-10-16_Fri_reel_60-second-portfolio-audit/` |
+| 6 | Sat 2026-10-17 | 08:00 | Carousel | build a prospect tracker | soft mention | `posts/06_2026-10-17_Sat_carousel_build-a-prospect-tracker/` |
+| 7 | Sun 2026-10-18 | 08:00 | Single image | which question are you stuck on | — | `posts/07_2026-10-18_Sun_image_which-question-are-you-stuck-on/` |
+| 8 | Mon 2026-10-19 | 08:00 | Carousel | 6 pricing mistakes | — | `posts/08_2026-10-19_Mon_carousel_6-pricing-mistakes/` |
+| 9 | Tue 2026-10-20 | 08:00 | Reel | follow up without being pushy | — | `posts/09_2026-10-20_Tue_reel_follow-up-without-being-pushy/` |
+| 10 | Wed 2026-10-21 | 08:00 | Single image | 6 numbers to check every friday | — | `posts/10_2026-10-21_Wed_image_6-numbers-to-check-every-friday/` |
+| 11 | Thu 2026-10-22 | 08:00 | Carousel | they said yes now what | soft mention | `posts/11_2026-10-22_Thu_carousel_they-said-yes-now-what/` |
+| 12 | Fri 2026-10-23 | 08:00 | Reel | ai drafts you decide | — | `posts/12_2026-10-23_Fri_reel_ai-drafts-you-decide/` |
+| 13 | Sat 2026-10-24 | 08:00 | Carousel | your foundation week | soft mention | `posts/13_2026-10-24_Sat_carousel_your-foundation-week/` |
+| 14 | Sun 2026-10-25 | 08:00 | Carousel | whats inside client machine | product post | `posts/14_2026-10-25_Sun_carousel_whats-inside-client-machine/` |
 
 ## Per-post checklist
 
