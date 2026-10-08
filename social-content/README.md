@@ -17,14 +17,13 @@ scheduled, and no ads were changed.
 
 The product folder (`D:\Claude\Client Machine\CLIENT MACHINE — V1.0`) is on
 your laptop. This was a cloud session and couldn't open it. Everything here is
-based on what's already in this repo:
+based on what's in this repo and what you uploaded:
 
 - the approved ad copy (`assets/creative_backup/ad_copy_backup.txt`, branch
   `claude/hopeful-mccarthy-wj2mdm`)
 - frames from the three final ad videos (Problem, Workflow, Demo), which show
   the module covers, the 30-day roadmap's Phase 1, an Outreach Script Library
   page heading, the Prospect Tracker dashboard and the two Canva templates
-
 - the two workbooks you uploaded: **Outreach Script Library** and **Pricing
   System**. Days 2, 8, 9, 11 and 12 were checked against them and revised
 
