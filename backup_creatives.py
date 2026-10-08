@@ -130,7 +130,11 @@ def copy_from_post(post_id, copy, notes):
 
 
 def media_for(creative, account_id, notes):
-    """Return [(kind, id, url)] for the creative's images and videos."""
+    """Return [{kind, id, url, name, ...}] for the creative's images and videos.
+
+    `name` is the file name the media was uploaded with (images) or the video
+    title, as Meta stores it.
+    """
     media = []
     spec = creative.get("object_story_spec") or {}
     feed = creative.get("asset_feed_spec") or {}
@@ -145,8 +149,10 @@ def media_for(creative, account_id, notes):
     if hashes:
         try:
             images = get(f"{account_id}/adimages", hashes=json.dumps(sorted(hashes)),
-                         fields="hash,name,url,permalink_url")["data"]
-            media += [("image", i["hash"], i.get("url") or i.get("permalink_url")) for i in images]
+                         fields="hash,name,url,permalink_url,width,height")["data"]
+            media += [{"kind": "image", "id": i["hash"], "name": i.get("name"),
+                       "url": i.get("url") or i.get("permalink_url"),
+                       "width": i.get("width"), "height": i.get("height")} for i in images]
         except GraphError as exc:
             notes.append(f"could not look up images {sorted(hashes)}: {exc}")
 
@@ -155,13 +161,26 @@ def media_for(creative, account_id, notes):
     videos.discard(None)
     for vid in sorted(videos):
         try:
-            media.append(("video", vid, get(vid, fields="source")["source"]))
+            v = get(vid, fields="source,title,length,picture")
+            media.append({"kind": "video", "id": vid, "name": v.get("title"), "url": v["source"],
+                          "length_seconds": v.get("length"), "thumbnail_url": v.get("picture")})
         except (GraphError, KeyError) as exc:
             notes.append(f"could not get a download link for video {vid}: {exc}")
 
     if not media and creative.get("image_url"):
-        media.append(("image", creative["id"], creative["image_url"]))
+        media.append({"kind": "image", "id": creative["id"], "name": None,
+                      "url": creative["image_url"]})
     return media
+
+
+def backup_stem(out_dir, ad_name, item):
+    """The path (without extension) a media item is backed up to."""
+    return os.path.join(out_dir, f"{slug(ad_name)}_{item['kind']}_{item['id']}")
+
+
+def post_media_items(urls):
+    return [{"kind": "post_media", "id": str(n + 1), "name": None, "url": u}
+            for n, u in enumerate(urls)]
 
 
 def download(url, path_stem):
@@ -192,11 +211,14 @@ def main():
     try:
         campaign = get(args.campaign_id, fields="name")
         ads = get(f"{args.campaign_id}/ads", limit=100,
-                  fields=f"id,name,effective_status,adset{{name}},creative{{{CREATIVE_FIELDS}}}")["data"]
+                  fields=f"id,name,effective_status,created_time,adset{{name}},"
+                         f"creative{{{CREATIVE_FIELDS}}}")["data"]
     except GraphError as exc:
         sys.exit(f"Graph API error: {exc}")
     ads = [a for a in ads if a["effective_status"] not in ("DELETED", "ARCHIVED")]
-    ads.sort(key=lambda a: a["name"])
+    # Oldest first within a name, so a shared post is backed up under the original
+    # ad's media IDs, matching the file names save_ad_metadata.py records.
+    ads.sort(key=lambda a: (a["name"], a["created_time"]))
 
     seen_posts = {}
     sections, failures, saved = [], [], []
@@ -216,13 +238,13 @@ def main():
         if creative.get("effective_object_story_id") and (not copy["primary_text"] or not media):
             post_media = copy_from_post(creative["effective_object_story_id"], copy, notes)
             if not media:
-                media = [("post_media", f"{n + 1}", u) for n, u in enumerate(post_media)]
+                media = post_media_items(post_media)
 
         files = []
-        for kind, mid, url in media:
-            stem = os.path.join(args.out_dir, f"{slug(ad['name'])}_{kind}_{mid}")
+        for item in media:
+            kind, mid, url = item["kind"], item["id"], item["url"]
             try:
-                path = download(url, stem)
+                path = download(url, backup_stem(args.out_dir, ad["name"], item))
                 files.append(f"{os.path.basename(path)} ({os.path.getsize(path):,} bytes)")
                 saved.append(path)
             except requests.RequestException as exc:

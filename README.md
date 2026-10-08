@@ -112,3 +112,17 @@ python backup_creatives.py
 
 For ads built from existing Page posts, reading the post's copy needs the
 `pages_read_engagement` permission on the token.
+
+## save_ad_metadata.py
+
+Snapshots the campaign's original ads (the oldest ad of each name, not later
+copies) into `original_ads_structure.json`, so a launch script can recreate
+them: campaign and ad set settings (budget, schedule, optimization, full
+targeting), each ad's creative (post ID, story spec, URL tags, Instagram
+account), its copy, and every media file with its Meta ID, uploaded file name
+and matching backup file in `assets/creative_backup/`.
+
+```bash
+python backup_creatives.py   # optional first: fills in backup_file paths
+python save_ad_metadata.py
+```
