@@ -1,33 +1,46 @@
 # Social content — CLIENT MACHINE (Facebook + Instagram)
 
-Organic content plan and drafts. Nothing in this folder has been published or
-scheduled, and no ads were changed.
+Finished organic posts for two weeks (Mon 12 – Sun 25 Oct 2026). Nothing here
+has been uploaded, scheduled or published, no accounts were connected, and no
+ads were changed. You handle all posting.
+
+## Start here
+
+**`POSTING-SCHEDULE.md`**: the date, suggested time and folder for every post,
+and which caption file goes with which images or video.
+
+Each post folder in `posts/` holds everything for that post:
+
+| File | Use |
+|---|---|
+| `slide-01.png` … / `image.png` | Carousel slides or single image, 1080×1350 |
+| `reel.mp4`, `reel-no-music.mp4`, `reel-cover.png` | Reel (with original music / without), and its cover |
+| `caption-instagram.txt` | Instagram caption + hashtags ("link in bio") |
+| `caption-facebook.txt` | Facebook caption ("link in the comments") |
+| `facebook-first-comment.txt` | The product link to post as the first comment (product-mention posts only) |
+| `alt-text.txt` | Accessibility text for the image or video |
+| `on-screen-text-and-voiceover.txt` | Reels only: the on-screen text, with optional voiceover lines |
+
+## Planning documents
 
 | File | What's in it |
 |---|---|
-| `01_product-summary-and-themes.md` | What the product is, who it's for, the problems it solves, content themes, voice rules |
-| `02_two-week-calendar.md` | The 14-day plan at a glance (format, theme, product mention or not) |
-| `03_week-1-drafts.md` | Days 1–7: captions, carousel outlines, Reel scripts |
-| `04_week-2-drafts.md` | Days 8–14: captions, carousel outlines, Reel scripts |
-| `05_missing-info-and-flags.md` | What's resolved, and what's still needed before posting |
+| `01_product-summary-and-themes.md` | Product, audience, problems it solves, content themes, voice rules |
+| `02_two-week-calendar.md` | The plan at a glance |
+| `03_week-1-drafts.md`, `04_week-2-drafts.md` | Working drafts. **Captions are generated from these files**, and the final on-image text is in `build/slides.mjs` and `build/reels.mjs` |
+| `05_missing-info-and-flags.md` | What's resolved and what's still open |
 | `06_comment-replies-and-faq.md` | Ready-to-paste replies, including the refund policy |
-| `07_backup-posts.md` | 4 extra drafts based on the Pricing System and Outreach Script Library |
+| `07_backup-posts.md` | 4 extra drafts (text only) for swaps or a third week |
+| `build/` | The scripts that produced the images, videos and captions (see `build/README.md`) |
 
-## Sources used
+## Sources
 
-The product folder (`D:\Claude\Client Machine\CLIENT MACHINE — V1.0`) is on
-your laptop. This was a cloud session and couldn't open it. Everything here is
-based on what's in this repo and what you uploaded:
+- The product's ad copy and the three final ad videos (in this repo's history)
+- The five workbooks you uploaded: **30-Day Client Acquisition Plan, Outreach
+  Script Library, Offer Builder, Pricing System, Client Onboarding Kit**. Every
+  post that touches these was checked against them
 
-- the approved ad copy (`assets/creative_backup/ad_copy_backup.txt`, branch
-  `claude/hopeful-mccarthy-wj2mdm`)
-- frames from the three final ad videos (Problem, Workflow, Demo), which show
-  the module covers, the 30-day roadmap's Phase 1, an Outreach Script Library
-  page heading, the Prospect Tracker dashboard and the two Canva templates
-- the two workbooks you uploaded: **Outreach Script Library** and **Pricing
-  System**. Days 2, 8, 9, 11 and 12 were checked against them and revised
-
-No feature, result or testimonial goes beyond those sources. The practical
-tips are general freelancing advice written for these posts. They are not
-copied from the paid workbooks. The other eight workbooks haven't been checked yet
-(see `05_missing-info-and-flags.md`).
+Posts teach principles in new words and with new examples. They don't reproduce
+worksheets, full scripts, or full pages from the paid files. Day 14 shows
+workbook covers, blurred interior pages (as your Demo ad does) and the tracker
+with its demo data.

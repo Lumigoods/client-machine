@@ -1,0 +1,129 @@
+/* LumiGoods / CLIENT MACHINE social style. Matches the ad creative:
+   navy grid background, bright blue accent, Montserrat headlines. */
+@font-face { font-family: "Montserrat"; font-weight: 700; src: url("fonts/montserrat-latin-700-normal.woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 800; src: url("fonts/montserrat-latin-800-normal.woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 900; src: url("fonts/montserrat-latin-900-normal.woff2"); }
+@font-face { font-family: "Open Sans"; font-weight: 400; src: url("fonts/open-sans-latin-400-normal.woff2"); }
+@font-face { font-family: "Open Sans"; font-weight: 400; font-style: italic; src: url("fonts/open-sans-latin-400-italic.woff2"); }
+@font-face { font-family: "Open Sans"; font-weight: 600; src: url("fonts/open-sans-latin-600-normal.woff2"); }
+@font-face { font-family: "Open Sans"; font-weight: 700; src: url("fonts/open-sans-latin-700-normal.woff2"); }
+
+:root {
+  --navy: #121f3b;
+  --navy-2: #17294f;
+  --deep: #0b1428;
+  --blue: #2f7eed;
+  --blue-soft: #8db6f5;
+  --white: #f9f8fb;
+  --ink: #13203c;
+  --ink-2: #4a5878;
+  --muted: #a9b8d6;
+  --line: rgba(255, 255, 255, 0.07);
+  --yellow: #ffc61a;
+  --head: "Montserrat", "Inter", "DejaVu Sans", sans-serif;
+  --body: "Open Sans", "Inter", "DejaVu Sans", sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; background: var(--deep); }
+body { font-family: var(--body); color: var(--white); -webkit-font-smoothing: antialiased; }
+
+.frame {
+  position: relative; overflow: hidden;
+  background:
+    linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 90px 90px,
+    linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / 90px 90px,
+    radial-gradient(120% 80% at 50% 45%, var(--navy-2) 0%, var(--navy) 55%, var(--deep) 100%);
+}
+.f45 { width: 1080px; height: 1350px; padding: 110px 90px 150px; }
+.f916 { width: 1080px; height: 1920px; }
+
+/* Typography */
+.kicker {
+  display: inline-block; font-family: var(--head); font-weight: 800; font-size: 26px;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--white);
+  background: var(--blue); padding: 10px 22px; border-radius: 999px; margin-bottom: 44px;
+}
+.kicker.ghost { background: rgba(47, 126, 237, 0.16); color: var(--blue-soft); border: 2px solid rgba(47, 126, 237, 0.45); }
+h1, h2, h3 { font-family: var(--head); font-weight: 900; line-height: 1.04; letter-spacing: -0.01em; text-transform: uppercase; }
+h1 { font-size: 104px; }
+h2 { font-size: 76px; }
+h3 { font-size: 50px; line-height: 1.1; }
+h1 em, h2 em, h3 em, .em { font-style: normal; color: var(--blue); }
+.sub { font-size: 40px; line-height: 1.35; color: var(--muted); margin-top: 36px; font-weight: 600; }
+.body { font-size: 42px; line-height: 1.4; color: var(--white); margin-top: 36px; }
+.small { font-size: 30px; line-height: 1.4; color: var(--muted); }
+
+/* Footer */
+.foot {
+  position: absolute; left: 90px; right: 90px; bottom: 64px; display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--head); font-weight: 800; font-size: 24px; letter-spacing: 0.18em; color: rgba(255, 255, 255, 0.45);
+}
+.foot .count { letter-spacing: 0.08em; }
+.foot .swipe { color: var(--white); letter-spacing: 0.08em; display: flex; align-items: center; gap: 14px; }
+.foot .swipe .arrow { width: 54px; height: 54px; border-radius: 50%; background: var(--blue); display: grid; place-items: center; font-size: 30px; color: #fff; letter-spacing: 0; }
+
+/* Cards */
+.card {
+  background: var(--white); color: var(--ink); border-radius: 28px; padding: 48px 52px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+}
+.card h3 { color: var(--ink); }
+.card .label { font-family: var(--head); font-weight: 800; font-size: 24px; letter-spacing: 0.08em; color: var(--blue); text-transform: uppercase; margin-bottom: 14px; }
+.note {
+  margin-top: 44px; padding: 30px 36px; border-left: 8px solid var(--blue); background: rgba(47, 126, 237, 0.12);
+  border-radius: 0 20px 20px 0; font-size: 36px; line-height: 1.4; font-style: italic; color: var(--white);
+}
+
+/* Lists */
+.list { list-style: none; display: flex; flex-direction: column; gap: 26px; }
+.list li { display: flex; gap: 26px; align-items: flex-start; font-size: 38px; line-height: 1.32; }
+.list li .mk {
+  flex: 0 0 auto; width: 58px; height: 58px; border-radius: 50%; background: var(--blue); color: #fff;
+  display: grid; place-items: center; font-family: var(--head); font-weight: 900; font-size: 28px; margin-top: -4px;
+}
+.list li .mk.box { border-radius: 12px; background: transparent; border: 4px solid var(--blue); }
+.list li b { font-family: var(--head); font-weight: 800; display: block; font-size: 36px; text-transform: none; }
+.list li span.d { display: block; font-size: 32px; color: var(--ink-2); margin-top: 6px; }
+.dark .list li span.d { color: var(--muted); }
+
+/* Step slides */
+.steprow { display: flex; align-items: center; gap: 30px; margin-bottom: 50px; }
+.num {
+  width: 150px; height: 150px; border-radius: 50%; background: var(--blue); display: grid; place-items: center;
+  font-family: var(--head); font-weight: 900; font-size: 64px; color: #fff; flex: 0 0 auto;
+  box-shadow: 0 0 0 14px rgba(47, 126, 237, 0.18);
+}
+.num.wide { width: 210px; border-radius: 80px; font-size: 56px; }
+.tag { font-family: var(--head); font-weight: 900; font-size: 44px; letter-spacing: 0.04em; text-transform: uppercase; }
+.dots { position: absolute; left: 90px; right: 90px; top: 64px; display: flex; gap: 12px; }
+.dots i { flex: 1; height: 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.14); }
+.dots i.on { background: var(--blue); }
+
+/* Strike-through quote */
+.quote { font-family: var(--head); font-weight: 900; font-size: 74px; line-height: 1.1; color: var(--ink); text-transform: uppercase; position: relative; display: inline; }
+.strike { text-decoration: line-through; text-decoration-color: var(--blue); text-decoration-thickness: 12px; }
+
+.pill { display: inline-block; background: var(--blue); color: #fff; font-family: var(--head); font-weight: 900; font-size: 46px; padding: 18px 34px; border-radius: 18px; text-transform: uppercase; transform: rotate(-2deg); }
+.chip { display: inline-flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.08); border: 2px solid rgba(255,255,255,0.14); border-radius: 999px; padding: 12px 26px; font-family: var(--head); font-weight: 800; font-size: 28px; }
+.blank { color: var(--blue); border-bottom: 5px solid var(--blue); padding: 0 6px; font-weight: 800; }
+
+/* Sticky note cards (Day 7) */
+.sticky { background: var(--white); color: var(--ink); border-radius: 18px; padding: 28px 36px; font-family: var(--head); font-weight: 800; font-size: 44px; display: flex; gap: 22px; align-items: center; box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
+.sticky .mk { width: 64px; height: 64px; border-radius: 50%; background: var(--blue); color: #fff; display: grid; place-items: center; font-size: 32px; flex: 0 0 auto; }
+
+/* Bars (Day 10) */
+.bar { display: flex; align-items: center; gap: 24px; }
+.bar .fill { height: 80px; border-radius: 16px; background: linear-gradient(90deg, var(--blue), #4f95f5); display: flex; align-items: center; padding: 0 30px; font-family: var(--head); font-weight: 800; font-size: 34px; white-space: nowrap; }
+
+/* Phone / chat mockups (Reels) */
+.phone { background: #0a1122; border: 3px solid rgba(255,255,255,0.12); border-radius: 56px; padding: 40px 36px; box-shadow: 0 40px 90px rgba(0,0,0,0.5); }
+.bubble { display: inline-block; max-width: 86%; padding: 26px 34px; border-radius: 34px; font-size: 38px; line-height: 1.38; }
+.bubble.me { background: var(--blue); color: #fff; border-bottom-right-radius: 10px; }
+.bubble.them { background: #1f2c48; color: var(--white); border-bottom-left-radius: 10px; }
+.seen { font-size: 26px; color: var(--muted); margin-top: 12px; text-align: right; }
+
+/* Images */
+.shot { border-radius: 22px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,0.45); background: #fff; }
+.shot img { display: block; width: 100%; }
+.badge { position: absolute; background: var(--yellow); color: var(--ink); font-family: var(--head); font-weight: 900; font-size: 30px; padding: 12px 24px; border-radius: 999px; }

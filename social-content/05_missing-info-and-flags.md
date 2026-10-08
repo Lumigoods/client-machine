@@ -9,31 +9,32 @@
 | Refund policy | No change-of-mind refunds once downloaded/accessed; refunds for duplicates and unresolved file/access problems; support via lumigoodstradingco@gmail.com | Reply bank in `06_comment-replies-and-faq.md`, plus a short note in the Day 14 caption |
 | Pricing System | Read (13 pages) | **Day 8 rewritten.** The old draft said "don't price by the hour only" and "ask for a deposit". The workbook says no model is best (hourly fits work that can't be estimated) and doesn't cover payment terms. Day 11 no longer mentions deposits |
 | Outreach Script Library | Read (31 pages) | **Day 9 rewritten.** The old draft set fixed timings and banned plain check-ins; the library leaves the gap to you and uses short nudges, then a close-the-loop message. **Day 2** now uses Observe → Personalize → Connect → Ask. **Day 12** matches the AI rules ("use only real details, don't add anything") |
+| 30-Day Plan, Offer Builder, Client Onboarding Kit | Read | **Day 11 rewritten.** The old draft had the welcome message restate scope, revisions and payment. The kit says reference the accepted terms, ask only for what the work needs, request access invites (never passwords), and send one short next-steps message. **Days 1, 3, 5, 13:** portfolio size changed from "2–3" to "2–4 pieces" to match Day 6 of the plan. **Day 13** now ends on the plan's real Day 8 ("define a qualified prospect"). **Day 4** checklist adds "no promised results", as the Offer Builder does |
+| Posting | You upload, schedule and publish | Finished files plus `POSTING-SCHEDULE.md`. Nothing was posted or connected |
 | New material | — | 4 backup posts in `07_backup-posts.md` (revision vs scope change, free-sample requests, pre-send check, answering "How much?") |
 
 ## Still open
 
-1. **Instagram account.** Your campaign notes say the ads run Facebook-only,
-   with no Instagram account connected. For organic posting that doesn't matter,
-   but you'll need the Instagram account set up as a professional account with
-   the Gumroad link in bio before Day 6.
+1. **Instagram setup.** Before Day 6, the Instagram account needs the Gumroad
+   link in bio (the link is in `POSTING-SCHEDULE.md`).
 2. **Refund wording.** Your policy opens with "No refunds allowed" and then lists
-   two refund cases. The drafts say "no change-of-mind refunds" so the two parts
-   don't contradict. Consider the same wording on Gumroad, and check the policy
-   suits the countries you sell to. This isn't legal advice.
-3. **The other 8 workbooks are still unread.** Days 3–5, 11 and 13 draw on the
-   Offer Builder, Portfolio Builder, 30-Day Plan and Client Onboarding Kit.
-   They match what the ads show, but I haven't checked them against the PDFs. If
-   you upload those (especially the 30-Day Plan, Offer Builder and Onboarding Kit),
-   I'll check them the same way.
-4. **Posting days, times and time zone.** The calendar assumes one post a day from Mon 12 Oct 2026.
-5. **Target countries.** Which six countries does "EN-6" mean? This affects posting times.
-6. **Two versions of the framework.** The ads use the 10-step workflow; the 30-day
-   roadmap uses an 11-part one. The posts use the ads' 10 steps. Is that OK?
-7. **Visual assets.** Source files, fonts and exact brand colors for carousels.
-   Should the carousels be built in Canva? A Canva connector is available, but I haven't used it.
-8. **Who replies to comments and DMs?** Days 4 and 7 invite replies.
-9. **Day 14 overlap with ads.** Reposting the Demo ad video means some people see it twice.
+   two refund cases. The replies say "no change-of-mind refunds" so the two parts
+   don't contradict. Consider using the same wording on Gumroad. This isn't legal advice.
+3. **Posting times.** The suggested times are a starting point. Which countries
+   are you targeting ("EN-6"), and in which time zone?
+4. **Two framework versions.** The posts use the ads' 10-step workflow, while the
+   roadmap page shows an 11-part framework. Is that OK?
+5. **Unread workbooks.** The Start Here Guide, Portfolio Builder, Sales System,
+   Proposal Kit and Delivery & Retention weren't uploaded. No post relies on their
+   details. Day 5 (portfolio) uses general advice that matches the plan's Day 5–6.
+6. **Day 14 visuals.** These show five workbook covers rendered from your PDFs,
+   plus crops of your Demo ad: the partly blurred roadmap and script pages, the
+   tracker dashboard (demo data) and the Canva templates. Check you're happy
+   showing them organically.
+7. **Who replies to comments and DMs?** Days 4 and 7 invite replies. The reply
+   bank is in `06_comment-replies-and-faq.md`.
+8. **Example names.** "Sam" and "Jamie" in the Reels are made-up examples, not
+   real people or clients.
 
 ## Things deliberately left out
 

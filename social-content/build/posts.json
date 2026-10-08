@@ -1,0 +1,16 @@
+[
+  {"day": 1,  "date": "2026-10-12", "weekday": "Mon", "format": "carousel", "slug": "getting-clients-is-a-sequence", "product": "none"},
+  {"day": 2,  "date": "2026-10-13", "weekday": "Tue", "format": "reel",     "slug": "stop-asking-do-you-need-an-editor", "product": "none"},
+  {"day": 3,  "date": "2026-10-14", "weekday": "Wed", "format": "image",    "slug": "pick-one-target-client", "product": "none"},
+  {"day": 4,  "date": "2026-10-15", "weekday": "Thu", "format": "carousel", "slug": "your-offer-in-one-sentence", "product": "none"},
+  {"day": 5,  "date": "2026-10-16", "weekday": "Fri", "format": "reel",     "slug": "60-second-portfolio-audit", "product": "none"},
+  {"day": 6,  "date": "2026-10-17", "weekday": "Sat", "format": "carousel", "slug": "build-a-prospect-tracker", "product": "soft"},
+  {"day": 7,  "date": "2026-10-18", "weekday": "Sun", "format": "image",    "slug": "which-question-are-you-stuck-on", "product": "none"},
+  {"day": 8,  "date": "2026-10-19", "weekday": "Mon", "format": "carousel", "slug": "6-pricing-mistakes", "product": "none"},
+  {"day": 9,  "date": "2026-10-20", "weekday": "Tue", "format": "reel",     "slug": "follow-up-without-being-pushy", "product": "none"},
+  {"day": 10, "date": "2026-10-21", "weekday": "Wed", "format": "image",    "slug": "6-numbers-to-check-every-friday", "product": "none"},
+  {"day": 11, "date": "2026-10-22", "weekday": "Thu", "format": "carousel", "slug": "they-said-yes-now-what", "product": "soft"},
+  {"day": 12, "date": "2026-10-23", "weekday": "Fri", "format": "reel",     "slug": "ai-drafts-you-decide", "product": "none"},
+  {"day": 13, "date": "2026-10-24", "weekday": "Sat", "format": "carousel", "slug": "your-foundation-week", "product": "soft"},
+  {"day": 14, "date": "2026-10-25", "weekday": "Sun", "format": "carousel", "slug": "whats-inside-client-machine", "product": "direct"}
+]

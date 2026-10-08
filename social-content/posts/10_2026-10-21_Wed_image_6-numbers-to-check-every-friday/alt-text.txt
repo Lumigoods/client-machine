@@ -1,0 +1,1 @@
+Six numbers to check every Friday: messages sent, replies, positive replies, conversations, proposals, clients won. Find the biggest drop and fix that step first.

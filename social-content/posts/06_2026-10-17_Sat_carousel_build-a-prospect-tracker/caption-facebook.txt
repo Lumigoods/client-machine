@@ -1,0 +1,14 @@
+Most follow-ups don't get missed because people are lazy. They get missed because nobody wrote them down.
+
+Open Google Sheets or Excel and make 6 columns:
+Prospect / Business · Contact name · Platform · Contact method · Last contact · Next step + date
+
+Two rules make it work:
+→ Every time you send a message, fill in the next step and a date.
+→ Every morning, sort by that date and do what's due.
+
+That's a working pipeline. No software needed.
+
+(If you'd rather start with a ready-made one: CLIENT MACHINE includes a Prospect Tracker spreadsheet with a dashboard and a follow-up queue that shows what's due today and what's overdue. Link in the comments.)
+
+#videoeditor #freelancevideoeditor #freelanceorganization

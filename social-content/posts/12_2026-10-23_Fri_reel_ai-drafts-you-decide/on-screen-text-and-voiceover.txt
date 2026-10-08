@@ -1,0 +1,15 @@
+DAY 12 REEL · "AI drafts, you decide" · 30 s · 9:16
+The video has on-screen text and music only. The voiceover lines are optional.
+
+0.0–3.0 s   ON SCREEN: Using AI for outreach? Read this first.
+            VOICEOVER: "If you use AI to write outreach, do this."
+3.0–10.0 s  ON SCREEN: RULE 1 · GIVE IT REAL DETAILS / prompt typed out:
+            "Write a short, friendly first message (max 4 sentences) to a podcaster. I noticed their latest episode about [topic] has a strong 30-second section at [timestamp]. My offer: I turn full episodes into 5 short clips within 3 days. End with one simple next step. Use only these details. Don't add anything I haven't told you, and no flattery."
+            VOICEOVER: "Give it the real details: what you noticed and your offer. Generic input, generic message."
+10.0–16.0 s ON SCREEN: RULE 2 · CUT IT TO 3–4 LINES / a long draft shrinks to three lines / AI drafts run long. Cut them.
+            VOICEOVER: "AI drafts run long. Cut it to three or four lines."
+16.0–22.0 s ON SCREEN: RULE 3 · CHECK EVERY CLAIM / "I loved your episode with Jamie last week!" highlighted and struck through / Didn't actually see it? Delete it. / Check names, facts, links and prices.
+            VOICEOVER: "Check every claim. If it mentions something you didn't actually see, delete it."
+22.0–26.5 s ON SCREEN: RULE 4 · READ IT OUT LOUD / If you wouldn't say it, don't send it.
+            VOICEOVER: "Read it out loud. If you wouldn't say it, don't send it."
+26.5–30.0 s ON SCREEN: AI writes the draft. You decide. / Screenshot the prompt and swap in your details.

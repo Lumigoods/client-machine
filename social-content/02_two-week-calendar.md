@@ -2,8 +2,8 @@
 
 Suggested start: **Monday 12 October 2026**. One feed post per day on both
 Facebook and Instagram (same asset, captions adjusted: IG says "link in bio",
-FB can put the link in the first comment). Dates are placeholders until you
-confirm posting days and times.
+FB can put the link in the first comment). Finished files and suggested times are in
+`POSTING-SCHEDULE.md`.
 
 Product mention: **—** none · **soft** one line at the end · **direct** product-focused post
 
@@ -22,11 +22,11 @@ Product mention: **—** none · **soft** one line at the end · **direct** prod
 | 11 | Thu 22 Oct | Carousel (8 slides) | E After yes | What to send after a client says yes | soft |
 | 12 | Fri 23 Oct | Reel (~30 s) | F Workflow | Using AI to draft outreach: AI drafts, you decide | — |
 | 13 | Sat 24 Oct | Carousel (9 slides) | A + C | Your first 7 days: a foundation week plan | soft |
-| 14 | Sun 25 Oct | Reel or carousel | Product | What's inside CLIENT MACHINE (and what it won't do) | direct |
+| 14 | Sun 25 Oct | Carousel (8 slides) | Product | What's inside CLIENT MACHINE (and what it won't do) | direct |
 
 ## Mix
 
-- 5 carousels, 4 Reels, 2 single images, 1 checklist, 1 text post, 1 product post
+- 7 carousels (incl. the 3-slide checklist and the product post), 4 Reels, 3 single images
 - Pillars: A ×3, B ×2, C ×2, D ×2, E ×1, F ×3, plus 1 product post
 - Product mentions: 3 soft + 1 direct out of 14
 

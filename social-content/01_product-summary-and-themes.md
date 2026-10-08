@@ -42,7 +42,7 @@ $47 USD, one-time, instant download (one ZIP). Sold on Gumroad
   Re-Engage). Follow-up queue columns: Prospect/Business, Contact Name,
   Platform, Contact Method, Last Contact.
 
-**Verified from the workbooks you uploaded (Pricing System, Outreach Script Library)**
+**Verified from the workbooks you uploaded**
 - *Pricing System (Module 05, 13 pages):* "Scope first. Price second." It doesn't
   tell you what to charge. It covers choosing a pricing model (per project,
   package, monthly retainer or hourly, and says no model is best), seven price
@@ -61,6 +61,18 @@ $47 USD, one-time, instant download (one ZIP). Sold on Gumroad
   replies (portfolio requests, pricing, free-sample requests with three options),
   moving to a call, re-engagement, referrals, AI adaptation prompts ("AI
   creates the draft. You provide the judgment.") and a message quality scorecard.
+- *30-Day Client Acquisition Plan (45 pages):* one day, one action, one
+  deliverable. Four phases: Build the Foundation (1–7), Build the Pipeline
+  (8–14), Create Conversations (15–21), Convert, Improve & Repeat (22–30).
+  "30-Day" describes the sequence, and you don't fail if it takes longer.
+- *Offer Builder (14 pages):* service vs offer, ideal client, "observe, don't
+  assume", deliverables, scope (included/not included), a four-stage process,
+  value without overpromising, offer statement, and an AI offer assistant. Ends
+  with the Offer Card.
+- *Client Onboarding Kit (17 pages):* Confirm → Request → Collect → Check →
+  Start. "Accepted ≠ paid ≠ onboarded", ask only for what the work needs,
+  access without passwords, real first-cycle dates, one short next-steps
+  message, and a Client Onboarding Sheet.
 - Refund policy: no change-of-mind refunds once downloaded or accessed;
   refunds for duplicate purchases and unresolved file/access problems.
   Support: lumigoodstradingco@gmail.com.

@@ -1,6 +1,6 @@
 # 3. Week 1 drafts (Days 1–7)
 
-All drafts. Nothing scheduled or published. `[IG]` / `[FB]` mark the lines that
+Working drafts. The **Caption** blocks here are the source for the final caption files in `posts/` (run `build/captions.py` after editing). On-image text was finalized in `build/slides.mjs` / `build/reels.mjs` and may differ slightly from the outlines below. Nothing scheduled or published. `[IG]` / `[FB]` mark the lines that
 change per platform. Slide text is kept short so it reads on a phone.
 
 ---
@@ -13,7 +13,7 @@ change per platform. Slide text is kept short so it reads on a phone.
 1. **Cover:** "Getting clients isn't one skill. It's a sequence." Sub: *10 steps most new editors skip around in*
 2. **1 · Offer:** Decide what you sell and who it's for. *"I edit videos" is a skill, not an offer.*
 3. **2 · Price:** Set a starting price before anyone asks. *Deciding on the spot is how you undercharge.*
-4. **3 · Proof:** Show 2–3 examples that match the offer. *Not your whole hard drive.*
+4. **3 · Proof:** Show 2–4 examples that match the offer. *Not your whole hard drive.*
 5. **4 · Prospects:** Make a list of real people or businesses who fit. *Names, not "YouTubers".*
 6. **5 · Outreach:** Message them about something you can actually see. *Cold DMs are step 5, not step 1.*
 7. **6 · Follow-up:** Most conversations need more than one message. *Write down when you'll follow up.*
@@ -83,7 +83,7 @@ change per platform. Slide text is kept short so it reads on a phone.
 **Image (4:5):** White card on navy. Title: **"Pick ONE target client for the next 30 days."** Three numbered questions:
 1. Who already publishes video regularly and could use more of it?
 2. Which of them can you reach and understand easily?
-3. Which of them matches your 2–3 best examples?
+3. Which of them matches your best 2–4 examples?
 
 Footer: *You can change it after 30 days. Pick one for now.*
 
@@ -142,7 +142,7 @@ Footer: *You can change it after 30 days. Pick one for now.*
 | 0–2 s | **"Audit your portfolio in 60 seconds"** + timer | "Open your portfolio. Let's audit it." |
 | 2–8 s | ✅ **1. First thing they see = your best piece** | "Is the first video your best one, and does it match the client you want?" |
 | 8–13 s | ✅ **2. Matches your offer** | "Selling short clips? Show short clips, not a wedding film from two years ago." |
-| 13–18 s | ✅ **3. 2–3 pieces, not 20** | "Two or three strong, relevant pieces beat a long list." |
+| 13–18 s | ✅ **3. 2–4 pieces, not 20** | "A few strong, relevant pieces beat a long list." |
 | 18–23 s | ✅ **4. One line of context per piece** | "Who was it for, what did you do, what was the goal?" |
 | 23–27 s | ✅ **5. Obvious next step** | "Can they contact you in one tap?" |
 | 27–30 s | **"No client work yet? Make a spec piece for your target client."** | "No client work yet? Make one sample for the client you want." |
@@ -153,15 +153,14 @@ Footer: *You can change it after 30 days. Pick one for now.*
 > 60-second audit:
 > 1. The first thing they see is your best piece, and it matches your target client
 > 2. The examples match the offer you're selling
-> 3. 2–3 strong pieces instead of everything you've ever made
+> 3. a few strong pieces (2–4 is a good starting range) instead of everything you've ever made
 > 4. One line of context per piece (for whom, what you did, the goal)
 > 5. A clear, one-tap way to contact you
 >
 > No client work yet? Create a spec sample: take publicly available long-form content in your niche and show how you'd cut it. Label it clearly as a sample, and don't post someone else's footage publicly without permission.
 >
-> Which of the 5 did you fail? (Number 4 is the most common.)
+> Which of the 5 does your portfolio miss?
 
-Note to you: "Number 4 is the most common" is an opinion, not data. Cut it if you prefer.
 
 **Hashtags:** #videoeditor #videoportfolio #freelancevideoeditor #portfoliotips #videoeditingtips
 

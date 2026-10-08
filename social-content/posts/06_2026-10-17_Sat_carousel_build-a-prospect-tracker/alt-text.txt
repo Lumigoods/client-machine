@@ -1,0 +1,1 @@
+Carousel: build a simple 6-column prospect tracker in a spreadsheet, plus four rules for using it.

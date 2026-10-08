@@ -1,6 +1,6 @@
 # 4. Week 2 drafts (Days 8–14)
 
-All drafts. Nothing scheduled or published.
+Working drafts. The **Caption** blocks here are the source for the final caption files in `posts/` (run `build/captions.py` after editing). On-image text was finalized in `build/slides.mjs` / `build/reels.mjs` and may differ slightly from the outlines below. Nothing scheduled or published.
 
 ---
 
@@ -96,34 +96,34 @@ Footer: *Find the step where the number drops the most. Fix that step first.*
 
 ---
 
-## Day 11 · Carousel · "What to send after they say yes"
+## Day 11 · Carousel · "They said yes. Now what?"
 
 **Goal:** saves + soft product mention.
+**Checked against:** Client Onboarding Kit (Module 08). This replaces the earlier draft, which had the reader restate scope, revisions and payment in the welcome message. The kit says the opposite: reference the accepted terms rather than rewrite them, ask only for what the work needs, use access invites (never passwords), and send one short next-steps message. The wording and examples here are new, and none of the kit's pages or sheet are reproduced.
 
 **Slides**
-1. **Cover:** "They said yes. Now what?" Sub: *A starter checklist for your first message after a yes*
-2. **Confirm the scope:** what you're delivering, how many videos, what length
-3. **Confirm the deadline:** first draft date + final delivery date
-4. **Confirm revisions:** how many rounds, and what one round means: one collected set of feedback, not a stream of separate notes
-5. **Get the assets:** footage, logos, fonts, brand colors, music preferences, examples they like
-6. **Agree on file delivery:** format, aspect ratios, where files go (Drive/Dropbox/etc.)
-7. **Payment:** amount, due date, how to pay (whatever terms you've chosen, written down)
-8. **End:** "Put it all in one message or one page. Clients relax when the process looks organized."
+1. **Cover:** "They said yes. Now what?" Sub: *One short next-steps message, not another proposal*
+2. **Accepted ≠ paid ≠ ready to start.** Three different things. One doesn't automatically mean the others.
+3. **Keep what you agreed.** Save the accepted proposal or written quote where you can find it. Don't rewrite the scope in your welcome message.
+4. **List what's still open.** e.g. the start date isn't confirmed, a file hasn't been sent, folder access isn't set up.
+5. **Ask only for what the work needs.** The test: *"Would I be blocked, or guessing, without it?"* Yes → ask. No → don't.
+6. **Access, not passwords.** Ask to be invited to the folder or tool. Never ask a client to send you a password.
+7. **Turn "weekly" into real dates.** Footage due → first version → feedback → final. Get the start date confirmed in writing.
+8. **The message:** Confirm you're moving forward → ask for what's missing → say what happens next. *Short. Clear. Done.*
 
 **Caption**
-> The first impression after a "yes" matters as much as the pitch.
+> The moment after a client says yes is where a lot of new editors over-send: a long welcome essay, a 20-question form, the whole scope typed out again.
 >
-> Before you open your editing software, send one organized message (or one page) that confirms:
-> ☐ scope: what, how many, what length
-> ☐ dates: first draft + final delivery
-> ☐ revisions: how many rounds, and that one round = one collected set of feedback
-> ☐ assets: footage, logo, fonts, colors, reference videos
-> ☐ delivery: formats, aspect ratios, where the files go
-> ☐ payment: amount, due date, how to pay
+> You don't need any of that. You need one short message that:
+> 1️⃣ confirms you're moving forward
+> 2️⃣ asks only for what's still missing: files, a folder invite, a date to confirm
+> 3️⃣ says what happens next
 >
-> It saves you from scope creep later, and it makes you look like someone who's done this before, even if it's your first client.
+> A useful filter for every request: "Would I be blocked, or guessing, without this?" If not, don't ask for it.
 >
-> (CLIENT MACHINE includes an editable Client Onboarding Sheet in Canva if you'd like a ready-made version. Free Canva account needed. [IG] Link in bio.)
+> And one safety rule: if you need access to a drive or a tool, ask to be invited. Never ask a client to send a password.
+>
+> (CLIENT MACHINE's Client Onboarding Kit walks through this step by step, and includes an editable Client Onboarding Sheet in Canva. Free Canva account needed. [IG] Link in bio. [FB] Link in the comments.)
 
 **Hashtags:** #videoeditor #freelancevideoeditor #clientonboarding #freelancetips #videoeditingbusiness
 
@@ -175,10 +175,10 @@ Note to you: the closing line mirrors the product's own wording ("AI creates the
 3. **Day 2 · Choose your core service.** The one deliverable you'll lead with, e.g. short clips from long videos.
 4. **Day 3 · Build your offer.** Write it in one sentence: who, what they have, what they get, how fast.
 5. **Day 4 · Set your starting pricing.** One package, what's included, one price. Written down.
-6. **Day 5 · Portfolio audit.** Keep 2–3 pieces that match the offer. Remove the rest from the front page.
+6. **Day 5 · Portfolio audit.** Keep the 2–4 pieces that best match the offer. Remove the rest from the front page.
 7. **Day 6 · Create or improve examples.** Fill the gap with one spec sample for your target client.
 8. **Day 7 · Build your client-ready profile.** Bio states the offer, links to the examples, and gives one clear contact method.
-9. **End:** "Day 8? Start your prospect list. Save this and start Monday."
+9. **End:** "Day 8? Decide what makes a prospect worth contacting. Save this and start Monday."
 
 **Caption**
 > Most beginner editors start with outreach. That's why it feels so hard. You're pitching before you know what you're pitching.
@@ -194,7 +194,7 @@ Note to you: the closing line mirrors the product's own wording ("AI creates the
 >
 > Small tasks, one a day. By Day 8, your messages have something solid behind them.
 >
-> This is the first phase of the 30-day plan inside CLIENT MACHINE. The full 30-day plan and the workbooks behind it are in the product if you want them. [IG] Link in bio. But you can start this week with just a notes app.
+> This is the first phase of the 30-day plan inside CLIENT MACHINE. The full 30-day plan and the workbooks behind it are in the product if you want them. [IG] Link in bio. [FB] Link in the comments. But you can start this week with just a notes app.
 
 **Hashtags:** #videoeditor #freelancevideoeditor #30daychallenge #freelancetips #videoeditingbusiness #findingclients
 
