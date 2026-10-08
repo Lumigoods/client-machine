@@ -176,6 +176,9 @@ def main():
         post(ad["id"], status="PAUSED")
         print(f"  '{label}': ad set {new_adset}, ad {new_ad}; original ad {ad['id']} paused")
 
+    # Meta pauses ads itself when they hit a hard error (e.g. a broken
+    # Page/Instagram link), so make sure the ad that stays here is on too.
+    post(keep["id"], status="ACTIVE")
     post(source["id"], name=f"{base_name} · {keep['name']}")
 
     # Confirmation: re-read everything from the API --------------------------------
