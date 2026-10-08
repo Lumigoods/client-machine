@@ -42,6 +42,7 @@ change per platform. Slide text is kept short so it reads on a phone.
 ## Day 2 · Reel · "Stop asking 'Do you need an editor?'"
 
 **Goal:** reach + comments. No product mention.
+**Checked against:** Outreach Script Library, Sections 1 and 3. It uses the library's own four-step idea (Observe → Personalize → Connect → Ask) and its "real, not manufactured" rule. The example DM is new, and none of the library's scripts or openers are reproduced.
 **Length:** ~25 s · 9:16 · text-on-screen, with optional voiceover
 
 | Time | On screen | Voiceover / text |
@@ -49,8 +50,8 @@ change per platform. Slide text is kept short so it reads on a phone.
 | 0–2 s | Big text: **"Do you need an editor?"** with a red strike-through | "Stop sending this message." |
 | 2–6 s | Phone mock: the DM, "Seen", no reply | "It makes them do all the thinking. They have to work out why they'd need you." |
 | 6–12 s | Text: **"Point to something you can actually see."** Three cards fly in: *Long videos with no short clips · Old episodes not reused · Inconsistent captions* | "Before you message, look at their content. Find something specific you can genuinely observe. Not a problem you made up." |
-| 12–20 s | Rewritten DM on screen (below) | "Then say what you noticed, offer one small idea, and ask an easy question." |
-| 20–25 s | Text: **"Observe → suggest → ask."** + "Save for your next outreach session" | "Observe, suggest, ask." |
+| 12–20 s | Rewritten DM on screen (below) | "Then make it about them, show why you're relevant, and ask for one small next step." |
+| 20–25 s | Text: **"Observe → Personalize → Connect → Ask."** + "Save for your next outreach session" | "Observe. Personalize. Connect. Ask." |
 
 **Example DM on screen (write your own, this is a pattern, not a script from the paid library):**
 > Hi Sam, I watched your latest podcast episode on pricing. The part at 14:20 about raising rates would work well as a 30-second vertical clip. I put together a quick idea of how I'd cut it. Want me to send it over?
@@ -63,11 +64,15 @@ change per platform. Slide text is kept short so it reads on a phone.
 > → great old episodes that never get reused
 > → captions that change style from video to video
 >
-> Then: say what you noticed, offer one small, specific idea, and ask an easy yes/no question.
+> Then build the message in four steps:
+> Observe: something real and public
+> Personalize: connect it to their situation
+> Connect: one line on why you're relevant
+> Ask: one simple next step
 >
-> Don't invent a problem. If you can't see one, that person might not be the right prospect yet, and that's useful to know too.
+> Two honesty rules: don't invent a problem, and don't say you watched the whole episode if you only skimmed it. If you can't find a real opportunity, that person might not be the right prospect yet, and that's useful to know too.
 >
-> Try it on 3 prospects this week and tell me what changed.
+> Try it on 3 prospects this week and tell us what changed in the comments.
 
 **Hashtags:** #videoeditor #freelancevideoeditor #coldoutreach #clientoutreach #freelancetips #videoeditingtips
 
@@ -93,7 +98,7 @@ Footer: *You can change it after 30 days. Pick one for now.*
 >
 > That's your target client for the next 30 days. Not forever. Just long enough to learn what they care about and get better at talking to them.
 >
-> Which one did you circle? Tell me below.
+> Which one did you circle? Tell us below.
 
 **Hashtags:** #videoeditor #freelancevideoeditor #nichedown #freelancebusiness #videoeditingbusiness
 

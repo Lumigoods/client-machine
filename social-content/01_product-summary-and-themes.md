@@ -42,6 +42,29 @@ $47 USD, one-time, instant download (one ZIP). Sold on Gumroad
   Re-Engage). Follow-up queue columns: Prospect/Business, Contact Name,
   Platform, Contact Method, Last Contact.
 
+**Verified from the workbooks you uploaded (Pricing System, Outreach Script Library)**
+- *Pricing System (Module 05, 13 pages):* "Scope first. Price second." It doesn't
+  tell you what to charge. It covers choosing a pricing model (per project,
+  package, monthly retainer or hourly, and says no model is best), seven price
+  drivers, an internal floor estimate (a planning number, not a price), a
+  starting price or range, packages, revisions vs scope changes vs corrections,
+  a four-step scope-change check, quoting, and stating your price (price +
+  scope + next step). It ends with a one-page Pricing Card. Payment terms are
+  explicitly not covered.
+- *Outreach Script Library (31 pages, 10 sections):* the core framework
+  Observe → Personalize → Connect → Ask, a 60-second personalization check,
+  first-contact frameworks for 10 audience types (creator/YouTuber, podcast,
+  coach, ecommerce, local business, agency, real estate, warm referral, public
+  request, email-first), six observable opportunities for value-first outreach,
+  a follow-up library (when to follow up and when not to, "not now", timing
+  cues, closing the loop, with the follow-up gap left to you), positive
+  replies (portfolio requests, pricing, free-sample requests with three options),
+  moving to a call, re-engagement, referrals, AI adaptation prompts ("AI
+  creates the draft. You provide the judgment.") and a message quality scorecard.
+- Refund policy: no change-of-mind refunds once downloaded or accessed;
+  refunds for duplicate purchases and unresolved file/access problems.
+  Support: lumigoodstradingco@gmail.com.
+
 **What it does not do (stated in the ads, keep this honesty in organic posts)**
 - It doesn't contact anyone for you.
 - No guaranteed clients, no promised results.
@@ -87,8 +110,10 @@ useful if the reader never buys.
 
 - Calm, practical, specific. Short sentences. No hype, no "six figures", no
   income screenshots, no "guaranteed".
-- Talk to the reader as "you". Write as the LumiGoods brand, not as a
-  personal editor story, until you confirm who is behind the account (see flags).
+- Talk to the reader as "you". Write as LumiGoods ("we"), never as a personal
+  editor story or a first-person "I". (Confirmed by you.) Example DMs inside
+  posts are the only place "I" appears, because they're examples for the reader
+  to send.
 - Use the product's own honesty lines: "It won't contact anyone for you."
   "A structured routine you can run, measure and improve."
 - Never present the tracker's demo rows (e.g. "Harbor Light Bakery (DEMO)") as

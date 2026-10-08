@@ -4,68 +4,66 @@ All drafts. Nothing scheduled or published.
 
 ---
 
-## Day 8 · Carousel · "6 starting-price mistakes"
+## Day 8 · Carousel · "6 pricing mistakes new editors make"
 
 **Goal:** saves + comments. No product mention.
+**Checked against:** Pricing System (Module 05). The ideas match the workbook's approach (scope first, no single best pricing model, change the scope rather than discount the same work). The wording and examples are new, and none of the worksheets or price examples are reproduced.
 
 **Slides**
 1. **Cover:** "6 pricing mistakes new editors make." Sub: *and what to do instead*
-2. **1 · Deciding the price in the DM.** → Set a starting price for your core service *before* anyone asks.
-3. **2 · Pricing by the hour only.** → Clients buy a result. Quote per video or per package, and track your hours privately so you know if it's worth it.
-4. **3 · No revision limit.** → Write down how many revision rounds are included, e.g. "2 rounds of changes."
-5. **4 · Unclear scope.** → Length, number of videos, captions yes/no, music sourcing, deadline. If it isn't written down, it isn't included.
-6. **5 · Discounting before they ask.** → Say the price, then stop talking. Offer a smaller package instead of a lower price.
-7. **6 · No upfront payment.** → For new clients, ask for a deposit or payment before you start.
-8. **End:** "Which one have you done? (No judgment, most of us have done #1.)"
+2. **1 · Quoting before you know the scope.** "How much for a YouTube edit?" can't be answered yet. → Ask about footage, finished length, turnaround and revisions first.
+3. **2 · Treating someone else's rate as *the* rate.** → Their scope, costs and experience aren't yours. Use public prices as one data point, not a standard.
+4. **3 · Not knowing your own floor.** → Roughly estimate the hours one project really takes (editing + messages + revisions + export). That's a planning number for you, not a price for them.
+5. **4 · Discounting the same work.** → If the budget is lower, change the scope (fewer clips, a shorter turnaround window, fewer revisions) instead of doing the same work for less. Or negotiate, but do it on purpose.
+6. **5 · Unlimited "small changes".** → Agree what one revision round means. A change of concept or an extra video isn't a revision. It changes the agreement.
+7. **6 · Saying the price, then apologising for it.** → Price + what it covers + the next step. Then stop.
+8. **End:** "Which one have you done? Comment the number."
 
 **Caption**
-> Pricing feels hardest when you decide it under pressure, in the middle of a conversation.
+> "How much do you charge?" feels hard when you try to answer it on the spot.
 >
-> Do this once instead:
-> → pick your core service
-> → decide what's included (length, revisions, captions, turnaround)
-> → set a starting price for that package
-> → write it down somewhere you can copy and paste it
+> Two things make it easier:
 >
-> A starting price isn't permanent. It's what lets you answer "how much?" without panic, and raise it later on purpose.
+> 1. **Scope first, price second.** You can't price something that hasn't been defined. Before quoting, find out roughly how much footage there is, how long the finished video will be, how fast they need it and how many rounds of changes they expect.
+>
+> 2. **Decide before anyone asks.** Pick one pricing model that fits how you actually deliver (per video, package, monthly, or hourly for genuinely unpredictable jobs). No single model is "correct". Then set a starting price or range for your base scope.
+>
+> When you say it, keep it simple: the price, what it covers, and what happens next.
 >
 > Which mistake from the slides have you made? 👇
-
-Note to you: these are general tips. Check whether the Pricing System workbook recommends anything different (e.g. deposits or per-hour pricing) so the posts don't contradict the product.
 
 **Hashtags:** #videoeditor #freelancevideoeditor #freelancepricing #pricingtips #videoeditingbusiness
 
 ---
 
-## Day 9 · Reel · "Follow up without being annoying"
+## Day 9 · Reel · "Follow up without being pushy"
 
 **Length:** ~30 s · 9:16
+**Checked against:** Outreach Script Library, Section 4 (Follow-Up Library). The rules below match it: follow up only while there's still a relevant reason, stop after a clear no, respect timing cues, close the loop politely, and choose your own follow-up gap. The product sets no fixed number of days, so this Reel doesn't either. The scripts on screen are new.
 
 | Time | On screen | Voiceover / text |
 |---|---|---|
-| 0–3 s | **"No reply ≠ no."** | "No reply doesn't mean no." |
-| 3–8 s | Text: *People are busy. Messages get buried.* | "Most people just didn't get to it." |
-| 8–14 s | **Message 1** card: *your original value-first message* | "Message one: what you noticed, plus one idea." |
-| 14–21 s | **Message 2 (a few days later)** card: *add something new: a quick sample, a clip idea, a relevant example* | "Message two: don't just say 'bumping this'. Add something new." |
-| 21–27 s | **Message 3 (about a week later)** card: *close the loop politely* | "Message three: close the loop. 'No worries if now isn't the time. Happy to reconnect later.'" |
-| 27–30 s | **"Write the next date down every time."** | "Then write down the next date. Every time." |
+| 0–3 s | **"No reply isn't a no."** | "No reply isn't a no. But it isn't a yes either." |
+| 3–8 s | **Follow up when…** *there's still a relevant reason to talk* | "Follow up when there's still a real reason for the conversation." |
+| 8–13 s | **Don't follow up when…** *they declined · they asked you to stop · you have nothing new to say and you've already nudged* | "Not when they've said no, asked you to stop, or you're just repeating yourself." |
+| 13–19 s | **Nudge:** short, friendly, no second pitch | "A nudge is short. It isn't a second pitch." |
+| 19–24 s | **New reason?** *a new video, a new launch, something they mentioned* → "that's a fresh message, not pressure" | "If something new happens, like a launch or a new video, that's a real reason to write again." |
+| 24–28 s | **Close the loop:** *"No worries if the timing isn't right. I'll stop here, and you know where to find me."* | "And when it's time to stop, close the loop kindly." |
+| 28–30 s | **"Pick your follow-up gap. Write the date down."** | |
 
 **Caption**
-> Following up isn't annoying when every message gives them something new.
+> Following up is a continuation, not pressure.
 >
-> A simple rhythm to try:
-> 1️⃣ First message: what you noticed in their content + one specific idea
-> 2️⃣ A few days later: add something new: a short sample, a different clip idea, an example
-> 3️⃣ About a week later: close the loop politely and leave the door open
+> ✅ Follow up when there's still a reasonable, relevant conversation to continue.
+> ❌ Don't when they clearly declined, asked not to be contacted, or you'd just be repeating yourself.
 >
-> Example closer:
-> "Hi Sam, I don't want to crowd your inbox, so this is my last note for now. If short clips become a priority later, I'd be glad to help."
+> A simple pattern:
+> → one or two short, friendly nudges, not a second pitch
+> → a new message only when there's something genuinely new: a launch, a new video, a date they gave you
+> → if they said "not now", acknowledge it and step back. If they said "check back next month", wait until next month
+> → when it's time to stop, close the loop politely and expect nothing back
 >
-> Then stop, mark it in your tracker, and move on to the next prospect.
->
-> Adjust the timing to what feels respectful in your niche. The bigger rule: never send a follow-up that only says "just checking in."
-
-Note to you: the timings are a generic example. If the Prospect Tracker's Follow-Up Queue or the Script Library use a specific schedule, use those timings instead so the content matches the product.
+> How many days between follow-ups? That's your call. Choose a gap, use it consistently, and write the next date down every time you send something.
 
 **Hashtags:** #videoeditor #freelancevideoeditor #followup #clientoutreach #freelancetips
 
@@ -106,10 +104,10 @@ Footer: *Find the step where the number drops the most. Fix that step first.*
 1. **Cover:** "They said yes. Now what?" Sub: *A starter checklist for your first message after a yes*
 2. **Confirm the scope:** what you're delivering, how many videos, what length
 3. **Confirm the deadline:** first draft date + final delivery date
-4. **Confirm revisions:** how many rounds, and how feedback is sent (one list, not 14 messages)
+4. **Confirm revisions:** how many rounds, and what one round means: one collected set of feedback, not a stream of separate notes
 5. **Get the assets:** footage, logos, fonts, brand colors, music preferences, examples they like
 6. **Agree on file delivery:** format, aspect ratios, where files go (Drive/Dropbox/etc.)
-7. **Payment:** amount, deposit, due date, how to pay
+7. **Payment:** amount, due date, how to pay (whatever terms you've chosen, written down)
 8. **End:** "Put it all in one message or one page. Clients relax when the process looks organized."
 
 **Caption**
@@ -118,10 +116,10 @@ Footer: *Find the step where the number drops the most. Fix that step first.*
 > Before you open your editing software, send one organized message (or one page) that confirms:
 > ☐ scope: what, how many, what length
 > ☐ dates: first draft + final delivery
-> ☐ revisions: how many rounds, how feedback is sent
+> ☐ revisions: how many rounds, and that one round = one collected set of feedback
 > ☐ assets: footage, logo, fonts, colors, reference videos
 > ☐ delivery: formats, aspect ratios, where the files go
-> ☐ payment: amount, deposit, due date
+> ☐ payment: amount, due date, how to pay
 >
 > It saves you from scope creep later, and it makes you look like someone who's done this before, even if it's your first client.
 >
@@ -134,6 +132,7 @@ Footer: *Find the step where the number drops the most. Fix that step first.*
 ## Day 12 · Reel · "AI drafts, you decide"
 
 **Length:** ~30 s · 9:16 · screen recording of an AI chat + text overlays
+**Checked against:** Outreach Script Library, Section 9 (AI Adaptation Prompts) and the Message Quality Scorecard. The rules match: give AI only real details, don't let it add anything, check names, facts and links, and review before sending. The prompt on screen is new, not one of the five prompts in the workbook.
 
 | Time | On screen | Voiceover / text |
 |---|---|---|
@@ -145,7 +144,7 @@ Footer: *Find the step where the number drops the most. Fix that step first.*
 | 28–30 s | **"AI writes a draft. You check it and decide."** | |
 
 **Example prompt on screen (OK to share, it's general):**
-> Write a short, friendly first message (max 4 sentences) to a podcaster. I noticed their latest episode about [topic] has a strong 30-second section at [timestamp] that would work as a vertical clip. My offer: I turn full episodes into 5 short clips within 3 days. End with a simple yes/no question. No flattery, no exaggeration.
+> Write a short, friendly first message (max 4 sentences) to a podcaster. I noticed their latest episode about [topic] has a strong 30-second section at [timestamp] that would work as a vertical clip. My offer: I turn full episodes into 5 short clips within 3 days. End with one simple next step. Use only these details. Don't add anything I haven't told you, and no flattery.
 
 **Caption**
 > AI can save you time on outreach. It can also make you sound like every other DM in their inbox.
@@ -153,14 +152,14 @@ Footer: *Find the step where the number drops the most. Fix that step first.*
 > 4 rules:
 > 1. Give it real details: what you observed + your one-sentence offer
 > 2. Cut the draft down to 3–4 lines
-> 3. Check every claim. Delete anything you didn't actually see
+> 3. Check every claim: names, facts, links, prices. Delete anything you didn't actually see
 > 4. Read it out loud before sending
 >
 > AI writes the draft. You check it and decide what gets sent.
 >
 > Prompt template is on screen. Screenshot it and swap in your details.
 
-Note to you: the closing line mirrors the product's own wording. No product mention needed here; it's a deliberate echo.
+Note to you: the closing line mirrors the product's own wording ("AI creates the draft. You provide the judgment."). No product mention needed.
 
 **Hashtags:** #videoeditor #freelancevideoeditor #aiforcreators #chatgpttips #clientoutreach
 
@@ -232,6 +231,8 @@ Note to you: the closing line mirrors the product's own wording. No product ment
 > What it won't do: contact anyone for you or guarantee clients. It's a structured routine you can run, measure and improve.
 >
 > $47 USD, one-time. [IG] Link in bio. [FB] Link in the comments.
+>
+> It's a digital download, so please check that it's right for you before buying. Change-of-mind refunds aren't offered once it's been downloaded. Questions first? Send us a DM.
 >
 > And if you're not buying anything right now: go back through this week's posts and do the foundation week. That alone puts you ahead of where you started.
 

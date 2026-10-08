@@ -34,7 +34,7 @@ Product mention: **—** none · **soft** one line at the end · **direct** prod
 
 Each day, reshare the feed post to Stories with one interactive sticker:
 - Day 1: poll "Which step do you skip most? Offer / Follow-up"
-- Day 4: question box "Drop your one-sentence offer, I'll give feedback"
+- Day 4: question box "Drop your one-sentence offer and we'll give feedback"
   (only if someone can answer the replies)
 - Day 7: quiz with the 5 questions
 - Day 10: slider "How many follow-ups did you send this week?"

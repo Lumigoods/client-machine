@@ -9,7 +9,9 @@ scheduled, and no ads were changed.
 | `02_two-week-calendar.md` | The 14-day plan at a glance (format, theme, product mention or not) |
 | `03_week-1-drafts.md` | Days 1–7: captions, carousel outlines, Reel scripts |
 | `04_week-2-drafts.md` | Days 8–14: captions, carousel outlines, Reel scripts |
-| `05_missing-info-and-flags.md` | What I need from you before anything goes live |
+| `05_missing-info-and-flags.md` | What's resolved, and what's still needed before posting |
+| `06_comment-replies-and-faq.md` | Ready-to-paste replies, including the refund policy |
+| `07_backup-posts.md` | 4 extra drafts based on the Pricing System and Outreach Script Library |
 
 ## Sources used
 
@@ -23,7 +25,10 @@ based on what's already in this repo:
   the module covers, the 30-day roadmap's Phase 1, an Outreach Script Library
   page heading, the Prospect Tracker dashboard and the two Canva templates
 
+- the two workbooks you uploaded: **Outreach Script Library** and **Pricing
+  System**. Days 2, 8, 9, 11 and 12 were checked against them and revised
+
 No feature, result or testimonial goes beyond those sources. The practical
 tips are general freelancing advice written for these posts. They are not
-copied from the paid workbooks. Please check them against the PDFs before
-posting (see `05_missing-info-and-flags.md`).
+copied from the paid workbooks. The other eight workbooks haven't been checked yet
+(see `05_missing-info-and-flags.md`).
