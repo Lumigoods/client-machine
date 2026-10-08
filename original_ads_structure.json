@@ -376,7 +376,7 @@
           "kind": "video",
           "meta_id": "1074550711865392",
           "uploaded_file_name": "CM_Ad1_Problem_FINAL_9x16.mp4",
-          "backup_file": null,
+          "backup_file": "assets/creative_backup/CM_Ad1_Problem_FINAL_9x16.mp4",
           "backup_file_stem": "assets/creative_backup/CM_Ad1_Problem_FINAL_9x16",
           "length_seconds": 21,
           "aspect_ratio": "9x16",
@@ -394,13 +394,23 @@
             },
             "vertical": true
           },
-          "match_basis": "library file named for 'Ad1 · Problem' and 9x16, from this video's placement rule"
+          "match_basis": "library file named for 'Ad1 · Problem' and 9x16, from this video's placement rule",
+          "local_file": {
+            "width": 1080,
+            "height": 1920,
+            "duration_seconds": 21.0,
+            "video_codec": "h264",
+            "fps": 30.0,
+            "has_audio": false,
+            "size_bytes": 2103838,
+            "sha256": "c34daae2321727a20bd46ed7d7990b1d897c9bf5d284a5ee69c92ada0edd5a96"
+          }
         },
         {
           "kind": "video",
           "meta_id": "1416097756629894",
           "uploaded_file_name": "CM_Ad1_Problem_FINAL_4x5.mp4",
-          "backup_file": null,
+          "backup_file": "assets/creative_backup/CM_Ad1_Problem_FINAL_4x5.mp4",
           "backup_file_stem": "assets/creative_backup/CM_Ad1_Problem_FINAL_4x5",
           "length_seconds": 21,
           "aspect_ratio": "4x5",
@@ -409,7 +419,17 @@
             "positions": "all other placements",
             "vertical": false
           },
-          "match_basis": "library file named for 'Ad1 · Problem' and 4x5, from this video's placement rule"
+          "match_basis": "library file named for 'Ad1 · Problem' and 4x5, from this video's placement rule",
+          "local_file": {
+            "width": 1080,
+            "height": 1350,
+            "duration_seconds": 21.0,
+            "video_codec": "h264",
+            "fps": 30.0,
+            "has_audio": false,
+            "size_bytes": 2113229,
+            "sha256": "8ce3bb060bb4531a1239ffa660ff6f27547289ff4ea18e0a8a22a952f68424db"
+          }
         }
       ],
       "notes": [
@@ -685,7 +705,7 @@
           "kind": "video",
           "meta_id": "1646347997141256",
           "uploaded_file_name": "CM_Ad2_Workflow_FINAL_4x5.mp4",
-          "backup_file": null,
+          "backup_file": "assets/creative_backup/CM_Ad2_Workflow_FINAL_4x5.mp4",
           "backup_file_stem": "assets/creative_backup/CM_Ad2_Workflow_FINAL_4x5",
           "length_seconds": 22.6,
           "aspect_ratio": "4x5",
@@ -694,13 +714,23 @@
             "positions": "all other placements",
             "vertical": false
           },
-          "match_basis": "library file named for 'Ad2 · Workflow' and 4x5, from this video's placement rule"
+          "match_basis": "library file named for 'Ad2 · Workflow' and 4x5, from this video's placement rule",
+          "local_file": {
+            "width": 1080,
+            "height": 1350,
+            "duration_seconds": 22.6,
+            "video_codec": "h264",
+            "fps": 30.0,
+            "has_audio": false,
+            "size_bytes": 2218641,
+            "sha256": "385ccd9dbbcabe8a72d9ef4a6de9fcd6e98345d75411adf28123a89d788843ca"
+          }
         },
         {
           "kind": "video",
           "meta_id": "28540853032210523",
           "uploaded_file_name": "CM_Ad2_Workflow_FINAL_9x16.mp4",
-          "backup_file": null,
+          "backup_file": "assets/creative_backup/CM_Ad2_Workflow_FINAL_9x16.mp4",
           "backup_file_stem": "assets/creative_backup/CM_Ad2_Workflow_FINAL_9x16",
           "length_seconds": 22.6,
           "aspect_ratio": "9x16",
@@ -718,7 +748,17 @@
             },
             "vertical": true
           },
-          "match_basis": "library file named for 'Ad2 · Workflow' and 9x16, from this video's placement rule"
+          "match_basis": "library file named for 'Ad2 · Workflow' and 9x16, from this video's placement rule",
+          "local_file": {
+            "width": 1080,
+            "height": 1920,
+            "duration_seconds": 22.6,
+            "video_codec": "h264",
+            "fps": 30.0,
+            "has_audio": false,
+            "size_bytes": 2233615,
+            "sha256": "1901104ca722e5540ad3d7487b93063bd5dfe1672e7237ec8f8463c5a5b51276"
+          }
         }
       ],
       "notes": []
@@ -992,7 +1032,7 @@
           "kind": "video",
           "meta_id": "1982240102734737",
           "uploaded_file_name": "CM_Ad3_Demo_FINAL_4x5.mp4",
-          "backup_file": null,
+          "backup_file": "assets/creative_backup/CM_Ad3_Demo_FINAL_4x5.mp4",
           "backup_file_stem": "assets/creative_backup/CM_Ad3_Demo_FINAL_4x5",
           "length_seconds": 23.4,
           "aspect_ratio": "4x5",
@@ -1001,13 +1041,23 @@
             "positions": "all other placements",
             "vertical": false
           },
-          "match_basis": "library file named for 'Ad3 · Demo' and 4x5, from this video's placement rule"
+          "match_basis": "library file named for 'Ad3 · Demo' and 4x5, from this video's placement rule",
+          "local_file": {
+            "width": 1080,
+            "height": 1350,
+            "duration_seconds": 23.4,
+            "video_codec": "h264",
+            "fps": 30.0,
+            "has_audio": false,
+            "size_bytes": 3456445,
+            "sha256": "8badf728474622af8e95bb266dae6dd8f06c6884bd164c799f91ac0b316f3d16"
+          }
         },
         {
           "kind": "video",
           "meta_id": "2536756630126896",
           "uploaded_file_name": "CM_Ad3_Demo_FINAL_9x16.mp4",
-          "backup_file": null,
+          "backup_file": "assets/creative_backup/CM_Ad3_Demo_FINAL_9x16.mp4",
           "backup_file_stem": "assets/creative_backup/CM_Ad3_Demo_FINAL_9x16",
           "length_seconds": 23.4,
           "aspect_ratio": "9x16",
@@ -1025,7 +1075,17 @@
             },
             "vertical": true
           },
-          "match_basis": "library file named for 'Ad3 · Demo' and 9x16, from this video's placement rule"
+          "match_basis": "library file named for 'Ad3 · Demo' and 9x16, from this video's placement rule",
+          "local_file": {
+            "width": 1080,
+            "height": 1920,
+            "duration_seconds": 23.4,
+            "video_codec": "h264",
+            "fps": 30.0,
+            "has_audio": false,
+            "size_bytes": 3732897,
+            "sha256": "833c31e6bfa05ebc2da54a43a7c173735283cf04fae3f215675523dad08a9176"
+          }
         }
       ],
       "notes": []
