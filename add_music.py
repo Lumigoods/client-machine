@@ -70,7 +70,8 @@ def adsr(n, a, d, s, r):
 class Track:
     """A stereo buffer with a few instruments that write into it."""
 
-    def __init__(self, seconds, bpm):
+    def __init__(self, seconds, bpm, offset=0.0):
+        self.offset = offset
         self.n = int(seconds * SR)
         self.bpm = bpm
         self.beat = 60.0 / bpm
@@ -163,7 +164,7 @@ class Track:
     # helpers -----------------------------------------------------------------
     def t(self, bar, beat=0.0):
         """Seconds at a bar (4/4) and beat."""
-        return (bar * 4 + beat) * self.beat
+        return self.offset + (bar * 4 + beat) * self.beat
 
     def arp(self, bar_from, bar_to, chords, pattern, step=0.5, **kw):
         """Arpeggiate one chord per bar; pattern indexes into the chord."""
@@ -254,9 +255,105 @@ def ad1_problem(seconds):
     return tr.render()
 
 
+def ad2_workflow(seconds):
+    """A 10-step sequence. 120 BPM, 2 s bars; one rising note per step.
+      0-5      'Just send cold DMs.' -> struck out, 'That's step 5': sparse,
+               muted, a short drop when the quote is struck out (~2 s)
+      5-14     steps 1-9 appear one per second: one rising pluck per step,
+               pulse and kick build underneath, riser into the reveal
+      14       '10 steps. One system.': impact, groove lands
+      16-end   'Every step has a tool' + price: full groove, lift at 19 s
+    """
+    tr = Track(seconds, 120)
+    em, c, g, d = (["E3", "G3", "B3", "D4"], ["C3", "E3", "G3", "B3"],
+                   ["G3", "B3", "D4", "F#4"], ["D3", "F#3", "A3", "C#4"])
+    # intro: the 'common advice' quote
+    tr.pad(0, 2.0, em, vol=0.07, cutoff=900)
+    for beat in (0, 1.5, 2, 3):
+        tr.pluck(tr.t(0, beat), "E4", vol=0.07, decay=0.08, cutoff=1500)
+    tr.pad(2.2, 2.8, ["C3", "E3", "G3"], vol=0.06, cutoff=700)  # struck out: drop
+    tr.bass(2.2, 2.8, "C2", vol=0.07)
+    # steps 1-9, one per second from 5 s, notes climbing the E minor scale
+    steps = ["E4", "F#4", "G4", "A4", "B4", "C5", "D5", "E5", "F#5"]
+    for i, note in enumerate(steps):
+        at = 5.0 + i
+        tr.pluck(at, note, vol=0.15, decay=0.35, cutoff=3000 + 250 * i, pan=0.3 * ((-1) ** i))
+        tr.hat(at + 0.5, vol=0.04 + 0.004 * i)
+        if i >= 3:
+            tr.kick(at, vol=0.35 + 0.05 * (i - 3))
+    for bar, (ch, root) in zip((2.5, 3.5, 4.5, 5.5), ((em, "E2"), (c, "C2"), (g, "G2"), (d, "D2"))):
+        tr.pad(tr.t(bar), tr.t(1), ch, vol=0.08, cutoff=1100 + 200 * (bar - 2.5))
+        tr.bass(tr.t(bar), tr.t(1), root, vol=0.09)
+    tr.pad(tr.t(6.5), tr.t(0.5), em, vol=0.08, cutoff=1900)
+    tr.riser(tr.t(6), tr.t(1))
+    # 10 steps. One system.
+    tr.impact(tr.t(7))
+    prog = [(g, "G2"), (d, "D2"), (em, "E2"), (c, "C2")]
+    bar = 7
+    while tr.t(bar) < seconds:
+        ch, root = prog[(bar - 7) % 4]
+        lift = tr.t(bar) >= 19 - 0.01
+        tr.pad(tr.t(bar), tr.t(1), ch, vol=0.11, cutoff=3200 if lift else 2400)
+        tr.bass(tr.t(bar), tr.t(0, 1.5), root)
+        tr.bass(tr.t(bar, 2), tr.t(0, 2), root)
+        tr.arp(bar, bar + 1, [ch], [0, 1, 2, 3, 2, 1, 2, 3] if lift else [0, 2, 1, 3],
+               step=0.25 if lift else 0.5, vol=0.11, cutoff=4500)
+        for beat in range(4):
+            tr.kick(tr.t(bar, beat))
+            tr.hat(tr.t(bar, beat + 0.5), vol=0.08)
+        tr.clap(tr.t(bar, 1))
+        tr.clap(tr.t(bar, 3))
+        bar += 1
+    tr.hat(19 - 0.25, vol=0.1)  # small fill into the price card
+    tr.clap(19 - 0.125, vol=0.18)
+    return tr.render()
+
+
+def ad3_demo(seconds):
+    """A calm product walkthrough. 80 BPM with 3 s bars starting at 1 s, so
+    each new section of the video (every ~3 s) lands on a downbeat.
+      0-1      pad swell (pickup)
+      1-7      'What's actually inside a $47 system?' / modules / page count
+      7-19     day-by-day plan, scripts, tracker, templates: steady, warm
+               lo-fi groove, a small change each section
+      19-end   CLIENT MACHINE + price: fuller, brighter
+    """
+    tr = Track(seconds, 80, offset=1.0)
+    dmaj, bm, gmaj, amaj = (["D3", "F#3", "A3", "C#4"], ["B2", "D3", "F#3", "A3"],
+                            ["G2", "B2", "D3", "F#3"], ["A2", "C#3", "E3", "G3"])
+    prog = [(dmaj, "D2"), (bm, "B1"), (gmaj, "G1"), (amaj, "A1")]
+    tr.pad(0, 1.2, dmaj, vol=0.06, cutoff=900)
+    bar = 0
+    while tr.t(bar) < seconds:
+        ch, root = prog[bar % 4]
+        final = tr.t(bar) >= 19 - 0.01
+        tr.pad(tr.t(bar), tr.t(1), ch, vol=0.11 if final else 0.09,
+               cutoff=2600 if final else 1500 + 150 * bar)
+        tr.bass(tr.t(bar), tr.t(0, 2.5), root, vol=0.12)
+        tr.bass(tr.t(bar, 2.5), tr.t(0, 1.5), root, vol=0.10)
+        if bar >= 1:
+            pattern = [0, 2, 3, 2, 1, 2, 3, 2] if final else [0, 2, 1, 3]
+            tr.arp(bar, bar + 1, [[n.replace("2", "4").replace("3", "4") for n in ch]],
+                   pattern, step=0.5 if final else 1.0, vol=0.10, decay=0.3, cutoff=3200)
+        if bar >= 2:
+            tr.kick(tr.t(bar, 0), vol=0.7)
+            tr.kick(tr.t(bar, 2.5), vol=0.5)
+            tr.clap(tr.t(bar, 1), vol=0.16)
+            tr.clap(tr.t(bar, 3), vol=0.16)
+            for k in range(8):
+                tr.hat(tr.t(bar, k * 0.5 + 0.25 * (k % 2)), vol=0.045 if k % 2 else 0.065)
+        bar += 1
+    tr.impact(19.0, vol=0.22)
+    return tr.render()
+
+
 ADS = {
     "Ad1": {"stem": "CM_Ad1_Problem_FINAL", "compose": ad1_problem, "bpm": 100,
             "mood": "problem -> solution: tense minor build, lifts to major at the reveal"},
+    "Ad2": {"stem": "CM_Ad2_Workflow_FINAL", "compose": ad2_workflow, "bpm": 120,
+            "mood": "a 10-step sequence: one rising note per step, lands on '10 steps. One system.'"},
+    "Ad3": {"stem": "CM_Ad3_Demo_FINAL", "compose": ad3_demo, "bpm": 80,
+            "mood": "calm, warm product walkthrough; section changes on the downbeats"},
 }
 
 

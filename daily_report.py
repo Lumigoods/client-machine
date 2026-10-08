@@ -6,8 +6,11 @@ from the Meta Graph API, and daily sales from the Gumroad API, then prints:
 
 - one row per day: spend, landing page views, sales, revenue, cost per sale
   and ROAS (revenue / spend, both in USD)
-- one row per ad for the whole period, with the Purchases the Meta pixel
-  attributed to it, their value, and ROAS (purchase value / spend)
+- one row per ad for the whole period, with the Initiate checkouts the Meta
+  pixel attributed to it and the cost per checkout. (Sales per ad come from
+  Gumroad Analytics via each link's utm_content; Purchase isn't verified in
+  Meta, so this report doesn't use it. To switch back, show pixel_events(...,
+  PURCHASE_TYPES) and the purchase value instead; see tracking_audit.md.)
 - the break-even cost per sale, so you can see at a glance whether ads pay
 
 Days are counted in the ad account's time zone. Meta spend is converted to
@@ -117,15 +120,17 @@ def landing_page_views(row):
     return 0
 
 
-# Meta reports the same pixel purchase under several action types; use the
+# Meta reports the same pixel event under several action types; use the
 # first one present so it isn't counted twice.
+CHECKOUT_TYPES = ("offsite_conversion.fb_pixel_initiate_checkout", "initiate_checkout",
+                  "omni_initiated_checkout")
 PURCHASE_TYPES = ("offsite_conversion.fb_pixel_purchase", "purchase", "omni_purchase")
 
 
-def pixel_purchases(row, field):
-    """Pixel purchases ('actions') or their value ('action_values') in a row."""
+def pixel_events(row, types, field="actions"):
+    """Count ('actions') or value ('action_values') of one pixel event in a row."""
     found = {a["action_type"]: float(a["value"]) for a in row.get(field, [])}
-    return next((found[t] for t in PURCHASE_TYPES if t in found), 0.0)
+    return next((found[t] for t in types if t in found), 0.0)
 
 
 def fmt_ratio(value, suffix=""):
@@ -160,7 +165,7 @@ def main():
 
     by_day = defaultdict(lambda: {"spend": 0.0, "lpv": 0, "clicks": 0, "sales": 0, "revenue": 0.0})
     by_ad = defaultdict(lambda: {"adset": "", "spend": 0.0, "impressions": 0, "clicks": 0, "lpv": 0,
-                                 "purchases": 0, "purchase_value": 0.0})
+                                 "checkouts": 0})
     for r in rows:
         day = dt.date.fromisoformat(r["date_start"])
         spend = float(r.get("spend", 0))
@@ -173,8 +178,7 @@ def main():
         ad["impressions"] += int(r.get("impressions", 0))
         ad["clicks"] += int(r.get("inline_link_clicks", 0))
         ad["lpv"] += landing_page_views(r)
-        ad["purchases"] += int(pixel_purchases(r, "actions"))
-        ad["purchase_value"] += pixel_purchases(r, "action_values")
+        ad["checkouts"] += int(pixel_events(r, CHECKOUT_TYPES))
     for day, price in sales or []:
         by_day[day]["sales"] += 1
         by_day[day]["revenue"] += price
@@ -203,18 +207,18 @@ def main():
     print("-" * len(header))
     print(_day_line("TOTAL", tot, rate))
 
-    print(f"\nBy ad ({since} to {until}); purchases are what the Meta pixel attributed to each ad")
+    print(f"\nBy ad ({since} to {until}); checkouts are Initiate checkouts the Meta pixel "
+          f"attributed to each ad. Sales per ad: Gumroad Analytics (utm_content).")
     header = (f"{'Ad':<20} {'Spend ' + currency:>11} {'Impr':>6} {'Clicks':>7} {'LPV':>5} "
-              f"{'Cost/LPV':>9} {'Purch':>6} {'Value ' + currency:>11} {'ROAS':>6}")
+              f"{'Cost/LPV':>9} {'Checkouts':>9} {'Cost/chk':>9}")
     print(header)
     print("-" * len(header))
     for name, a in sorted(by_ad.items()):
         cost_lpv = a["spend"] / a["lpv"] if a["lpv"] else None
-        # Meta reports purchase value in the account currency, same as spend.
-        roas = a["purchase_value"] / a["spend"] if a["spend"] else None
+        cost_chk = a["spend"] / a["checkouts"] if a["checkouts"] else None
         print(f"{name[:20]:<20} {a['spend']:>11,.2f} {a['impressions']:>6,} {a['clicks']:>7,} "
-              f"{a['lpv']:>5,} {fmt_ratio(cost_lpv):>9} {a['purchases']:>6,} "
-              f"{a['purchase_value']:>11,.2f} {fmt_ratio(roas, 'x'):>6}")
+              f"{a['lpv']:>5,} {fmt_ratio(cost_lpv):>9} {a['checkouts']:>9,} "
+              f"{fmt_ratio(cost_chk):>9}")
 
     spend_usd = tot["spend"] / rate
     print()

@@ -95,9 +95,10 @@ It is safe to re-run after a partial failure; it reuses what it already made.
 
 Daily ad spend vs. Gumroad sales for the USD 47 product: spend, clicks,
 landing page views, sales, revenue, cost per sale and ROAS per day, a per-ad
-breakdown with the Purchases the Meta pixel attributed to each ad, their value
-and ROAS (purchase value / spend, both in the account currency), and the
-break-even cost per sale after Gumroad's fees.
+breakdown with the Initiate checkouts the Meta pixel attributed to each ad and
+the cost per checkout, and the break-even cost per sale after Gumroad's fees.
+Sales per ad come from Gumroad Analytics (each ad link's `utm_content`), not
+from Meta; see `tracking_audit.md`.
 
 ```bash
 export GUMROAD_ACCESS_TOKEN="your-gumroad-token"   # optional
