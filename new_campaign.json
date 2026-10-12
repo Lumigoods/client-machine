@@ -127,12 +127,14 @@
       "status": "created"
     },
     "CM · Gumroad store visitors · 180d": {
+      "id": "120249467671530192",
       "type": "WEBSITE (pixel 2239569883568957, all visitors)",
-      "status": "blocked: owner must accept Custom Audience terms"
+      "status": "created; populating"
     },
     "CM · Started checkout · 180d": {
+      "id": "120249467671700192",
       "type": "WEBSITE (pixel InitiateCheckout)",
-      "status": "blocked: owner must accept Custom Audience terms"
+      "status": "created; populating"
     },
     "CM · Ad video viewers 50% · 365d": {
       "type": "ENGAGEMENT (video)",
