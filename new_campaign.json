@@ -119,5 +119,24 @@
     }
   },
   "launched_at": "2026-10-08T13:37:55+00:00",
-  "launch_note": "Facebook-only (Feed, Stories, Reels), LumiGoods Page identity, 3 ad sets x RM 6.66/day, 6 ads with music videos. Approved by owner."
+  "launch_note": "Facebook-only (Feed, Stories, Reels), LumiGoods Page identity, 3 ad sets x RM 6.66/day, 6 ads with music videos. Approved by owner.",
+  "retargeting_audiences": {
+    "CM · LumiGoods Page engagers · 365d": {
+      "id": "120249467652200192",
+      "type": "ENGAGEMENT (Page)",
+      "status": "created"
+    },
+    "CM · Gumroad store visitors · 180d": {
+      "type": "WEBSITE (pixel 2239569883568957, all visitors)",
+      "status": "blocked: owner must accept Custom Audience terms"
+    },
+    "CM · Started checkout · 180d": {
+      "type": "WEBSITE (pixel InitiateCheckout)",
+      "status": "blocked: owner must accept Custom Audience terms"
+    },
+    "CM · Ad video viewers 50% · 365d": {
+      "type": "ENGAGEMENT (video)",
+      "status": "not possible via API: videos are ad-account uploads, not Page videos; create in Ads Manager by campaign"
+    }
+  }
 }
