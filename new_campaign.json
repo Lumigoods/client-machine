@@ -140,5 +140,7 @@
       "type": "ENGAGEMENT (video)",
       "status": "not possible via API: videos are ad-account uploads, not Page videos; create in Ads Manager by campaign"
     }
-  }
+  },
+  "paused_at": "2026-10-16T00:20:54+00:00",
+  "pause_note": "Paused by owner request after test; see reports/campaign_report_2026-10-16.md. Do not reactivate without owner approval."
 }
