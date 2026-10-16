@@ -1,0 +1,194 @@
+<title>CLIENT MACHINE Page Copy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: one narrow reading column, a sticky copy bar on top, the copy itself set like the Gumroad page it becomes. */
+:root {
+  --bg: #f7f6f9;
+  --paper: #ffffff;
+  --fg: #1d1b22;
+  --muted: #625d6e;
+  --line: #dedbe5;
+  --accent: #b0287a;
+  --accent-fg: #ffffff;
+  --mark-bg: #fdeef6;
+  --mark-line: #e7a6cc;
+  --todo-bg: #fff4d6;
+  --todo-fg: #6b4a00;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --ui: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151318; --paper: #1d1a22; --fg: #ece9f1; --muted: #a59fb0; --line: #34303c;
+    --accent: #f07cc0; --accent-fg: #1b0f17; --mark-bg: #2c1a26; --mark-line: #7a3a62;
+    --todo-bg: #33290f; --todo-fg: #f3d68a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #151318; --paper: #1d1a22; --fg: #ece9f1; --muted: #a59fb0; --line: #34303c;
+  --accent: #f07cc0; --accent-fg: #1b0f17; --mark-bg: #2c1a26; --mark-line: #7a3a62;
+  --todo-bg: #33290f; --todo-fg: #f3d68a; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--ui); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper); }
+.wrap { max-width: 44rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper); border-bottom: 1px solid var(--line); }
+.bar .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding-block: 12px; }
+.bar h1 { margin: 0; font: 800 1.05rem/1.2 var(--display); letter-spacing: .01em; }
+.bar p { margin: 2px 0 0; color: var(--muted); font-size: .85rem; }
+.copy-btn { font: 600 .95rem var(--ui); background: var(--accent); color: var(--accent-fg); border: 0; border-radius: 999px; padding: .65rem 1.2rem; cursor: pointer; }
+.copy-btn:focus-visible { outline: 3px solid var(--mark-line); outline-offset: 2px; }
+.status { font-size: .85rem; color: var(--muted); min-height: 1.2em; }
+
+.steps { padding-block: 20px 8px; }
+.steps ol { margin: 0; padding-left: 1.25rem; display: grid; gap: 6px; color: var(--muted); font-size: .92rem; line-height: 1.5; max-width: 62ch; }
+.steps strong { color: var(--fg); }
+
+.paper { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; margin-block: 16px 40px; padding: 8px clamp(16px, 5vw, 40px) 28px; }
+#copy { font-family: var(--body); font-size: 1.05rem; line-height: 1.6; max-width: 65ch; }
+#copy h2 { font: 800 1.45rem/1.2 var(--display); text-wrap: balance; margin: 2rem 0 .6rem; }
+#copy p { margin: 0 0 .9rem; }
+#copy ul { margin: 0 0 1rem; padding-left: 1.2rem; display: grid; gap: .35rem; }
+#copy .img { font-family: var(--ui); font-size: .9rem; font-weight: 600; background: var(--mark-bg); border: 1px dashed var(--mark-line); border-radius: 6px; padding: .6rem .8rem; }
+#copy .todo { background: var(--todo-bg); color: var(--todo-fg); font-family: var(--ui); font-size: .9em; padding: 0 .3em; border-radius: 3px; }
+@media (prefers-reduced-motion: no-preference) { .copy-btn { transition: transform .1s; } .copy-btn:active { transform: scale(.97); } }
+</style>
+
+<div class="bar">
+  <div class="wrap">
+    <div>
+      <h1>CLIENT MACHINE page copy</h1>
+      <p>Paste-ready description for Gumroad</p>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+      <span class="status" id="status" role="status"></span>
+      <button class="copy-btn" id="copyBtn" type="button">Copy all</button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap steps">
+  <ol>
+    <li>Click <strong>Copy all</strong>. If your browser blocks it, the text below is selected instead: press Ctrl+C (Cmd+C on a Mac).</li>
+    <li>In Gumroad, open <strong>Products → CLIENT MACHINE → Edit</strong>, delete the old description and paste. Headings, bold and bullets come with it.</li>
+    <li>Replace each pink <strong>IMAGE</strong> line with that image, then delete the line.</li>
+    <li>Fill in the two yellow notes about spreadsheet apps after you've tested the tracker, then <strong>Save</strong> and check the page on your phone.</li>
+  </ol>
+</div>
+
+<div class="wrap">
+<div class="paper">
+<div id="copy">
+<h2>You can edit. Getting clients is the part nobody taught you.</h2>
+<p><strong>For beginner and early-stage freelance video editors.</strong></p>
+<p>The edit is usually the part you've practised. What's often missing is everything around it: what to offer, who to contact, what to say, when to follow up and how to price a project.</p>
+<p>CLIENT MACHINE turns that into one repeatable workflow, with a day-by-day plan that tells you what to do next.</p>
+<p><strong>$47 one-time · instant download</strong><br>10 workbooks (192 pages) · 30-day plan · outreach script library · Prospect Tracker spreadsheet · 2 editable Canva templates</p>
+<p class="img">IMAGE 1 HERE: everything in the ZIP at a glance</p>
+
+<h2>Getting clients isn't one skill. It's a sequence.</h2>
+<p><strong>Offer → Price → Proof → Prospects → Outreach → Follow-up → Conversation → Proposal → Onboarding → Delivery</strong></p>
+<p>It's easy to jump straight to cold DMs and skip the offer and the follow-up. CLIENT MACHINE gives every step its own tool:</p>
+<ul>
+<li><strong>Offer:</strong> Offer Builder. Decide who you help, what you deliver and what's not included.</li>
+<li><strong>Price:</strong> Pricing System. Scope first, price second, with no made-up "market rates".</li>
+<li><strong>Proof:</strong> Portfolio Builder. Choose or create relevant, honestly presented work.</li>
+<li><strong>Prospects:</strong> 30-Day Client Acquisition Plan. One day, one action, one deliverable.</li>
+<li><strong>Outreach:</strong> Outreach Script Library. Frameworks to adapt, not copy-paste spam.</li>
+<li><strong>Follow-up:</strong> Prospect Tracker. See who's due today, who's overdue and who to re-engage.</li>
+<li><strong>Conversation:</strong> Sales System. Turn interest into a clear next step, on a call or by message.</li>
+<li><strong>Proposal:</strong> Proposal Kit, including a reusable proposal template.</li>
+<li><strong>Onboarding:</strong> Client Onboarding Kit. Collect what the work needs and start properly.</li>
+<li><strong>Delivery:</strong> Delivery &amp; Retention. Send work, handle feedback and earn repeat work.</li>
+</ul>
+<p>A Start Here Guide shows you how the pieces fit together.</p>
+
+<h2>See inside</h2>
+<p class="img">IMAGE 2 HERE: 30-day roadmap, Phase 1 (roadmap_phase1.png)</p>
+<p><strong>The 30-day plan.</strong> Four phases: Build the Foundation (days 1–7), Build the Pipeline (8–14), Create Conversations (15–21), and Convert, Improve &amp; Repeat (22–30). "30-day" describes the order. If it takes you longer, you haven't failed.</p>
+<p class="img">IMAGE 3 HERE: Outreach Script Library page, partly blurred (script_library_page.png)</p>
+<p><strong>The Outreach Script Library (31 pages).</strong> First-contact frameworks for 10 kinds of client: YouTubers, podcasters, coaches, ecommerce brands, local businesses, agencies and more. It also covers follow-ups, replies like "how much?", and when to stop following up.</p>
+<p class="img">IMAGE 4 HERE: Prospect Tracker dashboard with demo data (tracker_dashboard_demo.png)</p>
+<p><strong>The Prospect Tracker.</strong> One spreadsheet for prospects, follow-ups and your numbers: messages sent, replies, calls, proposals and clients. Tabs: Dashboard, Prospect Tracker, Follow-Up Queue, Activity Log, Setup &amp; Definitions. Works in <span class="todo">[apps you've tested, e.g. Excel and Google Sheets]</span>.</p>
+<p class="img">IMAGE 5 HERE: the two Canva templates (canva_templates.png)</p>
+<p><strong>Two editable templates.</strong> A client proposal and a client onboarding sheet, which you copy into your own free Canva account and edit.</p>
+
+<h2>What it won't do</h2>
+<ul>
+<li>It won't contact prospects for you or find them automatically.</li>
+<li>It can't promise clients or income. Results depend on your offer, portfolio, outreach and follow-up.</li>
+<li>It isn't a video-editing course. It covers the client side of freelancing.</li>
+</ul>
+<p>Some modules include AI drafting prompts. AI writes a first draft; you check the names, facts, prices and tone before anything is sent. No AI software is included.</p>
+
+<h2>Who it's for</h2>
+<p><strong>A good fit if you:</strong></p>
+<ul>
+<li>can edit, but don't have a steady way to find clients</li>
+<li>send outreach in bursts, then stop</li>
+<li>aren't sure how to package or price your service</li>
+<li>want one process to follow rather than more scattered advice</li>
+</ul>
+<p><strong>Not a fit if you:</strong></p>
+<ul>
+<li>want guaranteed clients or a done-for-you lead service</li>
+<li>want editing tutorials</li>
+<li>already run a mature sales process and need agency-level systems</li>
+</ul>
+
+<h2>Refunds</h2>
+<p>Because it's an instant digital download, we don't offer change-of-mind refunds. We always refund duplicate purchases and any file or access problem we can't fix. Email lumigoodstradingco@gmail.com and we'll sort it out.</p>
+
+<h2>FAQ</h2>
+<p><strong>Is this a course?</strong><br>No. It's a set of workbooks, scripts, a 30-day plan and a tracker that you work through and fill in.</p>
+<p><strong>What do I receive?</strong><br>One ZIP file with the 10 module PDFs, the Prospect Tracker (.xlsx) and a one-page PDF with your Canva template links. You can print the worksheets or fill them in on screen.</p>
+<p><strong>What software do I need?</strong><br>A PDF reader and a spreadsheet app that opens .xlsx files, such as <span class="todo">[apps you've tested]</span>. Canva (free account) is only needed for the two editable templates.</p>
+<p><strong>Can I use the templates with my clients?</strong><br>Yes. The licence is for one buyer and your own freelance work. You can customise the proposal and onboarding templates and use them with your clients. You can't share, resell or redistribute CLIENT MACHINE or its templates.</p>
+<p><strong>Will I get updates?</strong><br>You get the version available when you buy. We may add updates later.</p>
+<p><strong>How do I get help?</strong><br>Email lumigoodstradingco@gmail.com with your order details.</p>
+</div>
+</div>
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById('copyBtn');
+  var status = document.getElementById('status');
+  var copy = document.getElementById('copy');
+
+  function cleanHtml() {
+    var clone = copy.cloneNode(true);
+    clone.querySelectorAll('[class]').forEach(function (el) { el.removeAttribute('class'); });
+    return clone.innerHTML;
+  }
+  function selectCopy() {
+    var range = document.createRange();
+    range.selectNodeContents(copy);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+  btn.addEventListener('click', function () {
+    var html = cleanHtml();
+    var text = copy.innerText;
+    var done = function () { status.textContent = 'Copied. Paste it into Gumroad.'; };
+    var fallback = function () {
+      selectCopy();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) {}
+      status.textContent = ok ? 'Copied. Paste it into Gumroad.' : 'Text selected. Press Ctrl+C (Cmd+C on a Mac).';
+    };
+    try {
+      if (window.ClipboardItem && navigator.clipboard && navigator.clipboard.write) {
+        navigator.clipboard.write([new ClipboardItem({
+          'text/html': new Blob([html], { type: 'text/html' }),
+          'text/plain': new Blob([text], { type: 'text/plain' })
+        })]).then(done, fallback);
+      } else { fallback(); }
+    } catch (e) { fallback(); }
+  });
+})();
+</script>
