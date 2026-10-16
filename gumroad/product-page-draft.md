@@ -105,16 +105,9 @@ names, facts, prices and tone before anything is sent. No AI software is include
 
 ## Refunds
 
-[[Pick one, and make the Gumroad refund-policy setting match it.]]
-
-[[Option A, if you keep the current policy:]]
 Because it's an instant digital download, we don't offer change-of-mind refunds.
 We always refund duplicate purchases and any file or access problem we can't fix.
 Email lumigoodstradingco@gmail.com and we'll sort it out.
-
-[[Option B, if you switch to a refund window, e.g. 14 days:]]
-Try it for 14 days. If it isn't useful, email lumigoodstradingco@gmail.com with
-your order details for a full refund.
 
 ## FAQ
 
@@ -144,7 +137,7 @@ Email lumigoodstradingco@gmail.com with your order details.
 |---|---|---|
 | Images | 1 cover image, none in the description | Keep the cover; add images 1–5 above. The files are in `social-content/build/assets/` on the `claude/sweet-shannon-1evqiv` branch |
 | Buy button text | Default ("I want this!") | "Buy now", or the closest option Gumroad offers |
-| Refund policy | Title "No refunds allowed" | Match the option you pick above |
+| Refund policy | Title "No refunds allowed", fine print matches the Refunds section | Keep as is; the Refunds section above explains it in plain words on the page |
 | Summary line | "The 30-Day Client Acquisition System for Beginner Video Editors" | Keep |
 | Details (Format, Core modules…) | Correct | Keep |
 | Testimonials | None | Add real quotes only, once you have them |
