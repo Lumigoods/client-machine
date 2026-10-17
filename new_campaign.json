@@ -142,5 +142,14 @@
     }
   },
   "paused_at": "2026-10-16T00:20:54+00:00",
-  "pause_note": "Paused by owner request after test; see reports/campaign_report_2026-10-16.md. Do not reactivate without owner approval."
+  "pause_note": "Paused by owner request after test; see reports/campaign_report_2026-10-16.md. Do not reactivate without owner approval.",
+  "rm100_test": {
+    "campaign_id": "120249566807350192",
+    "adset_id": "120249566807510192",
+    "status": "PAUSED, awaiting owner approval",
+    "ad_id": "120249566811910192",
+    "creative_id": "1433170558957533",
+    "video_id": "3052753771722443",
+    "link": "https://lumigoods.gumroad.com/l/client-machine/LAUNCH27?utm_campaign=cm-rm100&utm_content=problem-v2&utm_medium=paid&utm_source=meta"
+  }
 }
