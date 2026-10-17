@@ -148,8 +148,10 @@
     "adset_id": "120249566807510192",
     "status": "PAUSED, awaiting owner approval",
     "ad_id": "120249566811910192",
-    "creative_id": "1433170558957533",
+    "creative_id": "1732911897804474",
     "video_id": "3052753771722443",
-    "link": "https://lumigoods.gumroad.com/l/client-machine/LAUNCH27?utm_campaign=cm-rm100&utm_content=problem-v2&utm_medium=paid&utm_source=meta"
+    "link": "https://lumigoods.gumroad.com/l/client-machine/LAUNCH27?utm_campaign=cm-rm100&utm_content=problem-v2&utm_medium=paid&utm_source=meta",
+    "previous_creative_id": "1433170558957533",
+    "hook": "Know how to edit videos, but not how to find paying clients?"
   }
 }
